@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #17154d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    
+    // border: dotted black;
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    p {
+        font-size: 2rem;
+    }
+    
+    .home__continue {
+        margin-top: 2rem;
+        color: white;
+        background-color: #5044f7;
+        padding: 1rem;
+        
+        &:hover {
+            background-color: #1100fc;
+        }
+    }
+}

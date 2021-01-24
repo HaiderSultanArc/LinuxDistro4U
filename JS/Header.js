@@ -31,10 +31,10 @@ function Header({questionNumber, setQuestionNumber}) {
         <div className="header">
             <div className="header__pageTitle">
                 {
-                    questionNumber === 0 ? (
+                    Questions[questionNumber]["questionNumber"] === 0 ? (
                         <p>...</p>
                     ) : (
-                        <p>Question {questionNumber}</p>
+                        <p>Question {Questions[questionNumber]["questionNumber"]}</p>
                     )
                 }
             </div>
