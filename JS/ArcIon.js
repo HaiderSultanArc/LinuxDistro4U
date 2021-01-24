@@ -49,15 +49,17 @@ function ArcIon({questionNumber}) {
             </IconButton>
             
             <div id="speech" className="arcIon__speech">
-                {Questions[questionNumber].speech[speechIndex]}
+                <p>{Questions[questionNumber].speech[speechIndex]}</p>
                 
-                <IconButton onClick={speechBackward} disabled={disableBackward}>
-                    <ArrowBackIosRounded />
-                </IconButton>
-                
-                <IconButton onClick={speechForward} disabled={disableForward}>
-                    <ArrowForwardIosRounded />
-                </IconButton>
+                <div className="arcIon__speech_buttons">
+                    <IconButton onClick={speechBackward} disabled={disableBackward}>
+                        <ArrowBackIosRounded />
+                    </IconButton>
+                    
+                    <IconButton onClick={speechForward} disabled={disableForward}>
+                        <ArrowForwardIosRounded />
+                    </IconButton>
+                </div>
                 
                 <div className="arcIon__speech_circle1"></div>
                 <div className="arcIon__speech_circle2"></div>

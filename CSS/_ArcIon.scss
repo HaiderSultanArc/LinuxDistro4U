@@ -10,6 +10,8 @@
     }
     
     .arcIon__speech {
+        display: flex;
+        flex-direction: column;
         width: max-content;
         max-width: 60vw;
         border: 5px solid #faa21a;
@@ -28,6 +30,15 @@
         color: #17144d;
         
         transition: all 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045);
+        
+        p {
+            margin: 2rem;
+        }
+        
+        .arcIon__speech_buttons {
+            display: flex;
+            align-self: center;
+        }
         
         .arcIon__speech_circle1 {
             border: 5px solid #faa21a;

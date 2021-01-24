@@ -84,6 +84,13 @@
 }
 
 .arcIon .arcIon__speech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -104,6 +111,18 @@
   color: #17144d;
   -webkit-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.arcIon .arcIon__speech p {
+  margin: 2rem;
+}
+
+.arcIon .arcIon__speech .arcIon__speech_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .arcIon .arcIon__speech .arcIon__speech_circle1 {
