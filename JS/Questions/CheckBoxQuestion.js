@@ -10,31 +10,35 @@ function CheckBoxQuestion({questionNumber}) {
         let values = [...optionValue];
         let currentValue = optionValue[optionNumber];
         
-        console.log("Current Value: ", currentValue);
+        console.log("TEST { Previous numberOfOptionsSelected: ", numberOfOptionsSelected, " }");
         
         if (numberOfOptionsSelected === 1) {
             if (currentValue === 0) {
                 currentValue = 100;
-                setNumberOfOptionsSelected(numberOfOptionsSelected + 1);
+                setNumberOfOptionsSelected(numberOfOptionsSelected + 1)
             }
             else {
                 for (let i = 0; i < values.length; i++) {
                     values[i] = 50;
                 }
+                
+                console.log("Worked?");
+                
+                currentValue = 50;
+                setNumberOfOptionsSelected(numberOfOptionsSelected - 1);
             }
         }
         else if (numberOfOptionsSelected > 1) {
             if (currentValue) {
                 currentValue = 0;
-                setNumberOfOptionsSelected(numberOfOptionsSelected + 1);
+                setNumberOfOptionsSelected(numberOfOptionsSelected - 1);
             }
             else {
                 currentValue = 100;
+                setNumberOfOptionsSelected(numberOfOptionsSelected + 1)
             }
         }
         else {
-            console.log("TEST; values.length: ", values.length);
-            
             for (let i = 0; i < values.length; i++) {
                 values[i] = 0;
             }
@@ -44,12 +48,9 @@ function CheckBoxQuestion({questionNumber}) {
             setNumberOfOptionsSelected(numberOfOptionsSelected + 1);
         }
         
-        console.log("Value after changing: ", currentValue);
+        console.log("TEST { Now numberOfOptionsSelected: ", numberOfOptionsSelected, " }");
         
         values[optionNumber] = currentValue;
-        
-        console.log("TEST; values[", optionNumber, "]: ", values[optionNumber]);
-        
         setOptionValue(values);
         
         for (let i = 0; i < optionValue.length; i++) {
@@ -69,7 +70,7 @@ function CheckBoxQuestion({questionNumber}) {
                                 <FormControlLabel 
                                     label={option}
                                     control={
-                                        <Checkbox key={optionNumber+1} color={'primary'} onClick={selectedValue(optionNumber)} />
+                                        <Checkbox key={optionNumber} color={'primary'} onClick={selectedValue(optionNumber)} />
                                     }
                                 />
                             )
