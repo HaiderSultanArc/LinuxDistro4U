@@ -1,4 +1,4 @@
-import { Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel } from '@material-ui/core';
+import { Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel } from '@material-ui/core';
 import React, { useState } from 'react';
 import { Questions } from './QuestionsContent';
 
@@ -60,23 +60,25 @@ function CheckBoxQuestion({questionNumber}) {
     
     return (
         <div className="checkbox">
-            <p>{Questions[questionNumber].question}</p>
-            <FormControl>
-                <FormLabel >Pick 2 Atmost</FormLabel>
-                <FormGroup>
+            <p className="checkbox__question" >{Questions[questionNumber].question}</p>
+            <FormControl className="checkbox__formControl" >
+                <FormLabel>Pick 2 Atmost</FormLabel>
+                <FormGroup className="checkbox__formGroup" row>
                     {
                         Questions[questionNumber].options.map(
                             (option, optionNumber) => (
                                 <FormControlLabel 
+                                    className="checkbox__formControlLabel"
                                     label={option}
                                     control={
-                                        <Checkbox key={optionNumber} color={'primary'} onClick={selectedValue(optionNumber)} />
+                                        <Checkbox className="checkbox__option" key={optionNumber} onClick={selectedValue(optionNumber)} />
                                     }
                                 />
                             )
                         )
                     }
                 </FormGroup>
+                <FormHelperText>You can skip this Question if you want</FormHelperText>
             </FormControl>
         </div>
     )

@@ -9,13 +9,14 @@
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  padding-left: 1rem;
 }
 
 .header .header__pageTitle {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
-  color: #5044f7;
+  color: #faa21a;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -73,6 +74,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 3rem;
 }
 
 .arcIon img {
@@ -149,6 +151,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #17154d;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -173,6 +176,49 @@
 
 .home .home__continue:hover {
   background-color: #1100fc;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 2rem;
+}
+
+.checkbox .checkbox__question {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  color: #17154d;
+}
+
+.checkbox .checkbox__formControl {
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.checkbox .checkbox__formControl .checkbox__formGroup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.checkbox .checkbox__formControl .checkbox__formGroup .checkbox__formControlLabel {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #17154d;
+}
+
+.checkbox .checkbox__formControl .checkbox__formGroup .checkbox__option {
+  color: #faa21a;
 }
 
 * {

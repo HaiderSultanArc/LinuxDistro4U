@@ -34,10 +34,16 @@ export const Questions = [
             "Debian",
             "Ubuntu",
             "Fedora",
+            "Red Hat",
+            "OpenSuse",
+            "Gentoo",
             "Arch",
             "Linux From Scratch"
         ],
         "values": [
+            50,
+            50,
+            50,
             50,
             50,
             50,
