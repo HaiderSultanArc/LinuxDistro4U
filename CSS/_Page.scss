@@ -1,0 +1,27 @@
+.page {
+    display: grid;
+    height: 100vh;
+    
+    grid-template-areas: "header header header header header header header header header header"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon";
+                         
+    .page__header {
+        grid-area: header;
+    }
+    
+    .page__question {
+        grid-area: question;
+    }
+    
+    .page__arcIon {
+        grid-area: arcIon;
+    }
+}

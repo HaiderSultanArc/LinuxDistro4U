@@ -1,0 +1,27 @@
+@import './CSS/Header';
+@import './CSS/Page';
+@import './CSS/Question';
+@import './CSS/ArcIon';
+@import './CSS/Questions/Home';
+
+* {
+    margin: 0;
+}
+
+img {
+    animation: ImageAppear 3s;
+    
+    @keyframes ImageAppear {
+        0% {
+            opacity: 0;
+        }
+        
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.app {
+    
+}

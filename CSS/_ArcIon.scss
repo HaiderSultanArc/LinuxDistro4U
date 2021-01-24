@@ -1,0 +1,62 @@
+.arcIon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    img {
+        object-fit: contain;
+        width: 20rem;
+    }
+    
+    .arcIon__speech {
+        width: max-content;
+        max-width: 60vw;
+        border: 5px solid #faa21a;
+        padding: 80px 50px;
+        margin: 30px auto;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Goldman', cursive;
+        opacity: 1;
+        position: fixed;
+        right: 25rem;
+        top: 2rem;
+        background-color: white;
+        color: #17144d;
+        
+        transition: all 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045);
+        
+        .arcIon__speech_circle1 {
+            border: 5px solid #faa21a;
+            position: fixed;
+            width: 25px;
+            padding: 20px;
+            border-radius: 50%;
+            right: 22rem;
+            top: 13rem;
+            
+            &:before {
+                content: "";
+                position: absolute;
+                width: 25px;
+                padding: 20px;
+                border-radius: 50%;
+                right: 0px;
+                bottom: 0px;
+                background: #fff;
+            }
+        }
+        
+        .arcIon__speech_circle2 {
+            border: 5px solid #faa21a;
+            position: fixed;
+            width: 5px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            right: 20rem;
+            top: 16rem;   
+        }
+    }
+}

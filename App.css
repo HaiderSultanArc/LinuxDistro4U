@@ -1,0 +1,204 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.header .header__pageTitle {
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: #5044f7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.page {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+      grid-template-areas: "header header header header header header header header header header" "question question question question question question question question arcIon arcIon" "question question question question question question question question arcIon arcIon" "question question question question question question question question arcIon arcIon" "question question question question question question question question arcIon arcIon" "question question question question question question question question arcIon arcIon" "question question question question question question question question arcIon arcIon" "question question question question question question question question arcIon arcIon" "question question question question question question question question arcIon arcIon" "question question question question question question question question arcIon arcIon";
+}
+
+.page .page__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-area: header;
+}
+
+.page .page__question {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-area: question;
+}
+
+.page .page__arcIon {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 2;
+  grid-area: arcIon;
+}
+
+.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+}
+
+.arcIon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arcIon img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 20rem;
+}
+
+.arcIon .arcIon__speech {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 60vw;
+  border: 5px solid #faa21a;
+  padding: 80px 50px;
+  margin: 30px auto;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Goldman', cursive;
+  opacity: 1;
+  position: fixed;
+  right: 25rem;
+  top: 2rem;
+  background-color: white;
+  color: #17144d;
+  -webkit-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.arcIon .arcIon__speech .arcIon__speech_circle1 {
+  border: 5px solid #faa21a;
+  position: fixed;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: 22rem;
+  top: 13rem;
+}
+
+.arcIon .arcIon__speech .arcIon__speech_circle1:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+}
+
+.arcIon .arcIon__speech .arcIon__speech_circle2 {
+  border: 5px solid #faa21a;
+  position: fixed;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  right: 20rem;
+  top: 16rem;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.home h1 {
+  font-size: 4rem;
+}
+
+.home p {
+  font-size: 2rem;
+}
+
+.home .home__continue {
+  margin-top: 2rem;
+  color: white;
+  background-color: #5044f7;
+  padding: 1rem;
+}
+
+.home .home__continue:hover {
+  background-color: #1100fc;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  -webkit-animation: ImageAppear 3s;
+          animation: ImageAppear 3s;
+}
+
+@-webkit-keyframes ImageAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ImageAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=App.css.map */
