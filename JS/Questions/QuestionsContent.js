@@ -177,5 +177,21 @@ export const Questions = [
             "I want to mention that being 100% Free does'nt necassarily means a Good Thing. You might actually don't want that. Consult the Help Section to find out the Drawbacks.",
             "So you want your Distro to be 100% Free?"
         ]
+    },
+    {
+        "questionNumber": 7,
+        "type": "yesNo",
+        "question": "Do you want your Distro to work Live from a USB as well as SSD or HDD?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": 50,
+        "speech": [
+            "Linux can require some testing and prior Knowledge before starting. Don't worry, you can just install Distros, with Live Feature, on a USB and Test it as much as you want before actually switching to it.",
+            "It's a pretty handy feature most of Linux Distros provide. If You want to know which Linux Distro provides this feature you can check the Help Section.",
+            "So, do you want to test it or it does'nt matter?"
+        ]
     }
 ]

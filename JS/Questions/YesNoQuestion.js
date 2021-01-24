@@ -1,4 +1,4 @@
-import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from '@material-ui/core';
+import { FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import { Questions } from './QuestionsContent';
 
@@ -43,6 +43,7 @@ function YesNoQuestion({questionNumber}) {
                         }
                     />
                     </RadioGroup>
+                    <FormHelperText>You can skip this Question if you want</FormHelperText>
             </FormControl>
         </div>
     )

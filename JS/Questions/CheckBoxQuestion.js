@@ -9,6 +9,7 @@ function CheckBoxQuestion({questionNumber}) {
     useEffect(
         () => {
             setOptionValues([...Questions[questionNumber]['values']]);
+            setNumberOfOptionsSelected(0);
         }, [questionNumber]
     )
     
