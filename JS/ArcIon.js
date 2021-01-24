@@ -23,9 +23,17 @@ function ArcIon({questionNumber}) {
         
         if (speechDiv.style.opacity === "0") {
             speechDiv.style.opacity = "1";
+            speechDiv.style.zIndex = "1";
+            
+            setDisableBackward(false);
+            setDisableForward(false); 
         }
         else {
             speechDiv.style.opacity = "0";
+            speechDiv.style.zIndex = "-1";
+            
+            setDisableBackward(true);
+            setDisableForward(true);
         }
     }
     

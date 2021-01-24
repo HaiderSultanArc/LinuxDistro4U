@@ -109,6 +109,10 @@
   top: 2rem;
   background-color: white;
   color: #17144d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
