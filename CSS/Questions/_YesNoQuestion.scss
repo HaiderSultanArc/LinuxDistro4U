@@ -1,0 +1,29 @@
+.yesNo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 2rem;
+    
+    .yesNo__question {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.6rem;
+        color: #17154d;
+    }
+    
+    .yesNo__formControl {
+        margin-left: 4rem;
+        margin-top: 2rem;
+        
+        .yesNo__radioGroup {
+            .yesNo__formControlLabel {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #17154d;
+            }
+            
+            .yesNo__option {
+                color: #faa21a;
+            }
+        }
+    }
+}

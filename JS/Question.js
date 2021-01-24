@@ -2,6 +2,7 @@ import React from 'react';
 import CheckBoxQuestion from './Questions/CheckBoxQuestion';
 import Other from './Questions/Other';
 import { Questions } from './Questions/QuestionsContent';
+import YesNoQuestion from './Questions/YesNoQuestion';
 
 function Question({questionNumber, setQuestionNumber}) {   
     return (
@@ -10,10 +11,10 @@ function Question({questionNumber, setQuestionNumber}) {
                 (Questions[questionNumber]['type'] === "checkbox") ? (
                     <CheckBoxQuestion questionNumber={questionNumber} />
                 ) : (
-                    (Questions[questionNumber]['type'] === "other") ? (
-                        <Other questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
+                    (Questions[questionNumber]['type'] === "yesNo") ? (
+                        <YesNoQuestion questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
                     ) : (
-                        null
+                        <Other questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
                     )
                 )
             }

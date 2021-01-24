@@ -145,5 +145,21 @@ export const Questions = [
             "Although you can still skip any question but I highly reocommend NOT DOING THAT. You can consult Help Section if you feel like.",
             "With that being said, let's continue."
         ]
+    },
+    {
+        "questionNumber": 5,
+        "type": "yesNo",
+        "question": "Do You want your Distro to be Begginer Friendly?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": [50],
+        "speech": [
+            "Linux can be quite a handful when it comes to difficulty. But Some Distros are Specifically focus on Begginers.",
+            "You can Check in Help Section to see which Distros are Begginner Friendly",
+            "So Do you want it as a YES?"
+        ]
     }
 ]

@@ -51,6 +51,7 @@ function CheckBoxQuestion({questionNumber}) {
     return (
         <div className="checkbox">
             <p className="checkbox__question" >{Questions[questionNumber]['question']}</p>
+            
             <FormControl className="checkbox__formControl" >
                 <FormLabel>Pick {Questions[questionNumber]['max-selection']} Atmost</FormLabel>
                 <FormGroup className="checkbox__formGroup" row>
