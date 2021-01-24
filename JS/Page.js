@@ -5,13 +5,13 @@ import Question from './Question';
 import { QuestionContext } from './Questions/QuestionsContent';
 
 function Page() {
-    const [questionNumberProp, setQuestionNumber] = useContext(QuestionContext);
+    const [questionNumber, setQuestionNumber] = useContext(QuestionContext);
     
     return (
         <div className="page">
-            <div className="page__header"><Header questionNumber={questionNumberProp} setQuestionNumber={setQuestionNumber} /></div>
-            <div className="page__question"><Question questionNumber={questionNumberProp} setQuestionNumber={setQuestionNumber} /></div>
-            <div className="page__arcIon"><ArcIon questionNumber={questionNumberProp} setQuestionNumber={setQuestionNumber} /></div>
+            <div className="page__header"><Header questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} /></div>
+            <div className="page__question"><Question questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} /></div>
+            <div className="page__arcIon"><ArcIon questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} /></div>
         </div>
     )
 }

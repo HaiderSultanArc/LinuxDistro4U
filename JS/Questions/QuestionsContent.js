@@ -155,11 +155,27 @@ export const Questions = [
             "No",
             "May or May not be"
         ],
-        "values": [50],
+        "values": 50,
         "speech": [
             "Linux can be quite a handful when it comes to difficulty. But Some Distros are Specifically focus on Begginers.",
             "You can Check in Help Section to see which Distros are Begginner Friendly",
             "So Do you want it as a YES?"
+        ]
+    },
+    {
+        "questionNumber": 6,
+        "type": "yesNo",
+        "question": "Do you want your Distro to be 100% Free?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": 50,
+        "speech": [
+            "Linux is Free and Open-Source, but being 100% Free is not true for Linux as well, but some of the Distros truely hold the name for being 100% Free",
+            "I want to mention that being 100% Free does'nt necassarily means a Good Thing. You might actually don't want that. Consult the Help Section to find out the Drawbacks.",
+            "So you want your Distro to be 100% Free?"
         ]
     }
 ]

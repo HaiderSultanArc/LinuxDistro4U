@@ -1,14 +1,15 @@
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from '@material-ui/core';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Questions } from './QuestionsContent';
 
-function YesNoQuestion({questionNumber, setQuestionNumber}) {
+function YesNoQuestion({questionNumber}) {
     const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values']);
     
-    const selectedValue = (event) => {
-        setOptionValue(event.target.value);
-        console.log("TEST { ", optionValue, " Selected }");
-    }
+    useEffect(
+        () => {
+            setOptionValue(Questions[questionNumber]['values']);
+        }, [questionNumber]
+    )
     
     return (
         <div className="yesNo">
@@ -16,7 +17,7 @@ function YesNoQuestion({questionNumber, setQuestionNumber}) {
             
             <FormControl className="yesNo__formControl">
                 <FormLabel>Choose One Only</FormLabel>
-                    <RadioGroup className="yesNo__radioGroup" value={optionValue} onChange={selectedValue} >
+                    <RadioGroup className="yesNo__radioGroup" value={optionValue} onChange={event => setOptionValue(parseInt(event.target.value))} >
                     <FormControlLabel
                         className="yesNo__formControlLabel"
                         label={Questions[questionNumber]['options'][0]}

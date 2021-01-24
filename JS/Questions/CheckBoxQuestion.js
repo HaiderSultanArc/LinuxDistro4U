@@ -1,14 +1,20 @@
 import { Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel } from '@material-ui/core';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Questions } from './QuestionsContent';
 
 function CheckBoxQuestion({questionNumber}) {
-    const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values']);
+    const [optionValues, setOptionValues] = useState([...Questions[questionNumber]['values']]);
     const [numberOfOptionsSelected, setNumberOfOptionsSelected] = useState(0);
     
+    useEffect(
+        () => {
+            setOptionValues([...Questions[questionNumber]['values']]);
+        }, [questionNumber]
+    )
+    
     const selectedValue = (optionNumber) => (event) => {
-        let values = [...optionValue];
-        let currentValue = optionValue[optionNumber];
+        let values = [...optionValues];
+        let currentValue = optionValues[optionNumber];
         
         if (numberOfOptionsSelected === 1) {
             if (currentValue === 0) {
@@ -45,7 +51,10 @@ function CheckBoxQuestion({questionNumber}) {
         }
         
         values[optionNumber] = currentValue;
-        setOptionValue(values);
+        
+        setOptionValues(values);
+        
+        console.log("TEST { optionValues: ", optionValues, " }");
     }
     
     return (
@@ -58,11 +67,17 @@ function CheckBoxQuestion({questionNumber}) {
                     {
                         Questions[questionNumber]['options'].map(
                             (option, optionNumber) => (
-                                <FormControlLabel 
+                                <FormControlLabel
+                                    key={optionNumber}
                                     className="checkbox__formControlLabel"
                                     label={option}
+                                    value={optionValues[optionNumber]}
+                                    onClick={selectedValue(optionNumber)}
                                     control={
-                                        <Checkbox className="checkbox__option" key={optionNumber} onClick={selectedValue(optionNumber)} />
+                                        <Checkbox 
+                                            className="checkbox__option"
+                                            checked={optionValues[optionNumber] === 100 ? (true) : (false)}
+                                        />
                                     }
                                 />
                             )
