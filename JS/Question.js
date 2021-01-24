@@ -7,10 +7,10 @@ function Question({questionNumber, setQuestionNumber}) {
     return (
         <div className="question">
             {
-                (Questions[questionNumber].type === "home") ? (
+                (Questions[questionNumber]['type'] === "home") ? (
                     <Home questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
                 ) : (
-                    (Questions[questionNumber].type === "checkbox") ? (
+                    (Questions[questionNumber]['type'] === "checkbox") ? (
                         <CheckBoxQuestion questionNumber={questionNumber} />
                     ) : (
                         null

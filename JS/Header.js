@@ -8,7 +8,7 @@ function Header({questionNumber, setQuestionNumber}) {
     const [disableForward, setDisableForward] = useState(false);
     
     const previousQuestion = () => {
-        if (questionNumber > 0) {
+        if (questionNumber > 1) {
             setQuestionNumber(questionNumber - 1);
             setDisableForward(false);
         }
@@ -31,10 +31,10 @@ function Header({questionNumber, setQuestionNumber}) {
         <div className="header">
             <div className="header__pageTitle">
                 {
-                    Questions[questionNumber].questionNumber === 0 ? (
+                    questionNumber === 0 ? (
                         <p>...</p>
                     ) : (
-                        <p>Question {Questions[questionNumber].questionNumber}</p>
+                        <p>Question {questionNumber}</p>
                     )
                 }
             </div>

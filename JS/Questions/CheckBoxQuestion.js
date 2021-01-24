@@ -3,14 +3,12 @@ import React, { useState } from 'react';
 import { Questions } from './QuestionsContent';
 
 function CheckBoxQuestion({questionNumber}) {
-    const [optionValue, setOptionValue] = useState(Questions[questionNumber].values);
+    const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values']);
     const [numberOfOptionsSelected, setNumberOfOptionsSelected] = useState(0);
     
     const selectedValue = (optionNumber) => (event) => {
         let values = [...optionValue];
         let currentValue = optionValue[optionNumber];
-        
-        console.log("TEST { Previous numberOfOptionsSelected: ", numberOfOptionsSelected, " }");
         
         if (numberOfOptionsSelected === 1) {
             if (currentValue === 0) {
@@ -21,8 +19,6 @@ function CheckBoxQuestion({questionNumber}) {
                 for (let i = 0; i < values.length; i++) {
                     values[i] = 50;
                 }
-                
-                console.log("Worked?");
                 
                 currentValue = 50;
                 setNumberOfOptionsSelected(numberOfOptionsSelected - 1);
@@ -48,24 +44,18 @@ function CheckBoxQuestion({questionNumber}) {
             setNumberOfOptionsSelected(numberOfOptionsSelected + 1);
         }
         
-        console.log("TEST { Now numberOfOptionsSelected: ", numberOfOptionsSelected, " }");
-        
         values[optionNumber] = currentValue;
         setOptionValue(values);
-        
-        for (let i = 0; i < optionValue.length; i++) {
-            console.log("Option No.", i, ") ", Questions[questionNumber].options[i], ": ", optionValue[i]);
-        }
     }
     
     return (
         <div className="checkbox">
-            <p className="checkbox__question" >{Questions[questionNumber].question}</p>
+            <p className="checkbox__question" >{Questions[questionNumber]['question']}</p>
             <FormControl className="checkbox__formControl" >
-                <FormLabel>Pick 2 Atmost</FormLabel>
+                <FormLabel>Pick {Questions[questionNumber]['max-selection']} Atmost</FormLabel>
                 <FormGroup className="checkbox__formGroup" row>
                     {
-                        Questions[questionNumber].options.map(
+                        Questions[questionNumber]['options'].map(
                             (option, optionNumber) => (
                                 <FormControlLabel 
                                     className="checkbox__formControlLabel"

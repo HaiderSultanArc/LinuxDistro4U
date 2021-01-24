@@ -1,6 +1,6 @@
 import { IconButton } from '@material-ui/core';
 import { ArrowBackIosRounded, ArrowForwardIosRounded } from '@material-ui/icons';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ArcIonImg from "../assets/Arc'Ion LinuxDistro4U.png";
 import { Questions } from './Questions/QuestionsContent';
 
@@ -8,6 +8,15 @@ function ArcIon({questionNumber}) {
     const [speechIndex, setSpeechIndex] = useState(0);
     const [disableBackward, setDisableBackward] = useState(true);
     const [disableForward, setDisableForward] = useState(false);
+    
+    useEffect(
+        () => {
+            setSpeechIndex(0);
+            displaySpeechSwitch();
+            setDisableBackward(true);
+            setDisableForward(false);
+        }, [questionNumber]
+    )
     
     const displaySpeechSwitch = () => {
         const speechDiv = document.getElementById("speech");
@@ -32,7 +41,7 @@ function ArcIon({questionNumber}) {
     }
     
     const speechForward = () => {
-        if (speechIndex < Questions[questionNumber].speech.length - 1) {
+        if (speechIndex < Questions[questionNumber]['speech'].length - 1) {
             setSpeechIndex(speechIndex + 1)
             setDisableForward(false);
             setDisableBackward(false);
@@ -49,7 +58,7 @@ function ArcIon({questionNumber}) {
             </IconButton>
             
             <div id="speech" className="arcIon__speech">
-                <p>{Questions[questionNumber].speech[speechIndex]}</p>
+                <p>{Questions[questionNumber]['speech'][speechIndex]}</p>
                 
                 <div className="arcIon__speech_buttons">
                     <IconButton onClick={speechBackward} disabled={disableBackward}>
