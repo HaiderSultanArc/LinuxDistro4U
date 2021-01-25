@@ -27,4 +27,26 @@
             background-color: #faa21a;
         }
     }
+    
+    @media (max-width: 1024px) {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 5vw;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 5vw;
+        }
+        
+        p {
+            font-size: 3vw;
+        }
+    }
 }

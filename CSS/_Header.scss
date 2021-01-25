@@ -16,4 +16,26 @@
         color:  #faa21a;
         user-select: none;
     }
+    
+    @media (max-width: 1024px) {
+        padding: 0;
+        margin: 0;
+        
+        grid-template-columns: 25% 50% 25%;
+        
+        .header__pageTitle {
+            font-size: 4vw;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        padding: 0;
+        margin: 0;
+        
+        grid-template-columns: 30% 40% 30%;
+        
+        .header__pageTitle {
+            font-size: 5vw;
+        }
+    }
 }

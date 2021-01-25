@@ -2,6 +2,8 @@
     display: grid;
     height: 100vh;
     
+    // grid-template-columns: repeat(auto-fit, minmax(50vw 100vw));
+    
     grid-template-areas: "header header header header header header header header header header"
                          "question question question question question question question question arcIon arcIon"
                          "question question question question question question question question arcIon arcIon"
@@ -34,5 +36,19 @@
         font-size: 1.2rem;
         color: rgba(250, 160, 26, 0.6);
         user-select: none;
+    }
+    
+    @media (max-width: 500px) {
+        
+        grid-template-areas: "header"
+                             "question"
+                             "question"
+                             "question"
+                             "question"
+                             "question"
+                             "question"
+                             "question"
+                             "arcIon"
+                             "arcIon";
     }
 }

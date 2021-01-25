@@ -26,4 +26,14 @@
             }
         }
     }
+    
+    @media (max-width: 900px) {
+        .yesNo__question {
+            font-size: 1rem;
+        }
+        
+        .yesNo__formControl {
+            margin-top: 1rem;   
+        }
+    }
 }

@@ -29,4 +29,18 @@
             }
         }
     }
+    
+    @media (max-width: 900px) {
+        .checkbox__question {
+            font-size: 1.2rem;
+        }
+        
+        .checkbox__formControl {
+            margin-top: 1rem;
+            
+            .checkbox__formGroup {
+                grid-template-columns: auto auto auto;   
+            }
+        }
+    }
 }
