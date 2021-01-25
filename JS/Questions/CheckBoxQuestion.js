@@ -1,31 +1,30 @@
 import { Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
-import { Questions } from './QuestionsContent';
+import { Questions } from './QuestionsContext';
 
-function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex, setInputFeaturesIndex}) {
+function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex}) {
     const [optionValues, setOptionValues] = useState([...Questions[questionNumber]['values']]);
     const [numberOfOptionsSelected, setNumberOfOptionsSelected] = useState(0);
     
     useEffect(
         () => {
             let replaceInputFeatures = [...inputFeatures];
-            let replaceInputFeaturesIndex = inputFeaturesIndex;
+            let tempInputFeaturesIndex = inputFeaturesIndex;
             
             for (let i = 0; i < optionValues.length; i++) {
-                replaceInputFeatures[replaceInputFeaturesIndex] = optionValues[i];
-                console.log("TEST { replaceInputFeatures[replaceInputFeaturesIndex]: ", replaceInputFeatures[replaceInputFeaturesIndex], " }");
-                console.log("TEST { optionValues[i]: ", optionValues[i], " }");
-                replaceInputFeaturesIndex++;
+                tempInputFeaturesIndex++;
+                replaceInputFeatures[tempInputFeaturesIndex] = optionValues[i];
+                // console.log("TEST { replaceInputFeatures[", tempInputFeaturesIndex, "]: ", replaceInputFeatures[tempInputFeaturesIndex], " }");
+                // console.log("TEST { optionValues[", i,"]: ", optionValues[i], " }");
             }
             
-            replaceInputFeaturesIndex--;
+            // console.log("TEST { tempInputFeaturesIndex: ", tempInputFeaturesIndex, " }");
+            // console.log("TEST { replaceInputFeatures: ", replaceInputFeatures, " }");
             
-            setInputFeaturesIndex(replaceInputFeaturesIndex);
             setInputFeatures(replaceInputFeatures);
             
-            console.log("TEST { inputFeaturesIndex: ", inputFeaturesIndex, " }");
-            console.log("TEST { replaceInputFeaturesValues: ", replaceInputFeatures, " }");
-            console.log("TEST { inputFeatures:", inputFeatures, " }");
+            // console.log("TEST { inputFeaturesIndex:", inputFeaturesIndex, " }");
+            // console.log("TEST { inputFeatures:", inputFeatures, " }");
             
             setOptionValues([...Questions[questionNumber]['values']]);
             setNumberOfOptionsSelected(0);

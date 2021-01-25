@@ -1,14 +1,29 @@
 import { IconButton } from '@material-ui/core';
 import { ArrowBackIosRounded, ArrowForwardIosRounded, InfoOutlined } from '@material-ui/icons';
 import React, { useState } from 'react';
-import { Questions } from './Questions/QuestionsContent';
+import { Questions } from './Questions/QuestionsContext';
 
-function Header({questionNumber, setQuestionNumber}) {
+
+function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInputFeaturesIndex}) {
     const [disableBackward, setDisableBackward] = useState(false);
     const [disableForward, setDisableForward] = useState(false);
     
     const previousQuestion = () => {
         if (questionNumber > 1) {
+            if (Questions[questionNumber - 1]['questionNumber'] !== 0) {
+                let replaceInputFeaturesIndex = inputFeaturesIndex;
+                
+                console.log("TEST { Before replaceInputFeaturesIndex: ", replaceInputFeaturesIndex, " }");
+            
+                for (let i = Questions[questionNumber - 1]["values"].length - 1; i >= 0; i--) {
+                    replaceInputFeaturesIndex--;
+                }
+                
+                console.log("TEST { After replaceInputFeaturesIndex: ", replaceInputFeaturesIndex, " }");
+                
+                setInputFeaturesIndex(replaceInputFeaturesIndex);
+            }
+            
             setQuestionNumber(questionNumber - 1);
             setDisableForward(false);
         }
@@ -19,6 +34,20 @@ function Header({questionNumber, setQuestionNumber}) {
     
     const nextQuestion = () => {
         if (questionNumber < Questions.length - 1) {
+            if (Questions[questionNumber]['questionNumber'] !== 0) {
+                let replaceInputFeaturesIndex = inputFeaturesIndex;
+                
+                console.log("TEST { Before replaceInputFeaturesIndex: ", replaceInputFeaturesIndex, " }");
+            
+                for (let i = 0; i < Questions[questionNumber]["values"].length; i++) {
+                    replaceInputFeaturesIndex++;
+                }
+                
+                console.log("TEST { After replaceInputFeaturesIndex: ", replaceInputFeaturesIndex, " }");
+                
+                setInputFeaturesIndex(replaceInputFeaturesIndex);
+            }
+            
             setQuestionNumber(questionNumber + 1);
             setDisableBackward(false);
         }

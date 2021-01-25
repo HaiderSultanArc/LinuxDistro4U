@@ -2,7 +2,7 @@ import { IconButton } from '@material-ui/core';
 import { ArrowBackIosRounded, ArrowForwardIosRounded } from '@material-ui/icons';
 import React, { useEffect, useState } from 'react';
 import ArcIonImg from "../assets/Arc'Ion LinuxDistro4U.png";
-import { Questions } from './Questions/QuestionsContent';
+import { Questions } from './Questions/QuestionsContext';
 
 function ArcIon({questionNumber}) {
     const [speechIndex, setSpeechIndex] = useState(0);

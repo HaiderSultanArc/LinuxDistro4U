@@ -1,24 +1,23 @@
 import React, { useContext } from 'react';
 import ArcIon from './ArcIon';
 import Header from './Header';
+import { InputFeaturesContext, InputFeaturesIndexContext } from './InputFeaturesContext';
 import Question from './Question';
-import { InputFeaturesIndexProvider, InputFeaturesProvider, QuestionContext } from './Questions/QuestionsContent';
+import { QuestionContext } from './Questions/QuestionsContext';
 
 function Page() {
     const [questionNumber, setQuestionNumber] = useContext(QuestionContext);
+    const [inputFeatures, setInputFeatures] = useContext(InputFeaturesContext);
+    const [inputFeaturesIndex, setInputFeaturesIndex] = useContext(InputFeaturesIndexContext);
     
     return (
         <div className="page">
             <div className="page__header">
-                <Header questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
+                <Header questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} inputFeaturesIndex={inputFeaturesIndex} setInputFeaturesIndex={setInputFeaturesIndex} />
             </div>
             
             <div className="page__question">
-                <InputFeaturesProvider>
-                    <InputFeaturesIndexProvider>
-                        <Question questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
-                    </InputFeaturesIndexProvider>
-                </InputFeaturesProvider>
+                <Question questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} inputFeatures={inputFeatures} setInputFeatures={setInputFeatures} inputFeaturesIndex={inputFeaturesIndex}/>
             </div>
             
             <div className="page__arcIon">

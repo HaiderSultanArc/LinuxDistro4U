@@ -1,13 +1,18 @@
 import React from "react";
 import './App.css';
+import { InputFeaturesIndexProvider, InputFeaturesProvider } from "./JS/InputFeaturesContext";
 import Page from "./JS/Page";
-import { QuestionsContentProvider } from "./JS/Questions/QuestionsContent";
+import { QuestionsContextProvider } from "./JS/Questions/QuestionsContext";
 
 function App() {
   return (
-    <QuestionsContentProvider className="app">
-      <Page />
-    </QuestionsContentProvider>
+    <QuestionsContextProvider className="app">
+      <InputFeaturesProvider>
+        <InputFeaturesIndexProvider>
+          <Page />
+        </InputFeaturesIndexProvider>
+      </InputFeaturesProvider>
+    </QuestionsContextProvider>
   );
 }
 

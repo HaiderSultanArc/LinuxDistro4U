@@ -1,23 +1,26 @@
 import { FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
-import { Questions } from './QuestionsContent';
+import { Questions } from './QuestionsContext';
 
-function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex, setInputFeaturesIndex}) {
+function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex}) {
     const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values']);
     
     useEffect(
         () => {
-            let replaceInputFeaturesValues = [...inputFeatures];
-            let replaceInputFeaturesIndex = inputFeaturesIndex;
+            let replaceInputFeatures = [...inputFeatures];
+            let tempInputFeaturesIndex = inputFeaturesIndex;
             
-            replaceInputFeaturesValues[replaceInputFeaturesIndex] = optionValue;
+            replaceInputFeatures[tempInputFeaturesIndex] = optionValue;
+            tempInputFeaturesIndex++;
             
-            setInputFeaturesIndex(replaceInputFeaturesIndex);
-            setInputFeatures(replaceInputFeaturesValues);
+            // console.log("TEST { optionValue: ", optionValue, " }");
+            // console.log("TEST { tempInputFeaturesIndex: ", tempInputFeaturesIndex, " }");
+            // console.log("TEST { replaceInputFeatures: ", replaceInputFeatures, " }");
             
-            console.log("TEST { inputFeaturesIndex: ", inputFeaturesIndex, " }");
-            console.log("TEST { optionValue: ", optionValue, " }");
-            console.log("TEST { inputFeatures:", inputFeatures, " }");
+            setInputFeatures(replaceInputFeatures);
+            
+            // console.log("TEST { inputFeaturesIndex: ", inputFeaturesIndex, " }");
+            // console.log("TEST { inputFeatures:", inputFeatures, " }");
             
             setOptionValue(Questions[questionNumber]['values']);
         }, [questionNumber]
