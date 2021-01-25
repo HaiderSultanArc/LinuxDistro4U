@@ -3,28 +3,35 @@ import React, { useEffect, useState } from 'react';
 import { Questions } from './QuestionsContext';
 
 function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex}) {
-    const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values']);
+    const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values'][0]);
     
     useEffect(
         () => {
-            let replaceInputFeatures = [...inputFeatures];
-            let tempInputFeaturesIndex = inputFeaturesIndex;
-            
-            replaceInputFeatures[tempInputFeaturesIndex] = optionValue;
-            tempInputFeaturesIndex++;
-            
-            // console.log("TEST { optionValue: ", optionValue, " }");
-            // console.log("TEST { tempInputFeaturesIndex: ", tempInputFeaturesIndex, " }");
-            // console.log("TEST { replaceInputFeatures: ", replaceInputFeatures, " }");
-            
-            setInputFeatures(replaceInputFeatures);
-            
-            // console.log("TEST { inputFeaturesIndex: ", inputFeaturesIndex, " }");
-            // console.log("TEST { inputFeatures:", inputFeatures, " }");
-            
             setOptionValue(Questions[questionNumber]['values']);
         }, [questionNumber]
     )
+    
+    const mapInputFeatures = () => {
+        let replaceInputFeatures = [...inputFeatures];
+        let tempInputFeaturesIndex = inputFeaturesIndex;
+        
+        replaceInputFeatures[tempInputFeaturesIndex] = optionValue;
+        tempInputFeaturesIndex++;
+        
+        // console.log("TEST { tempInputFeaturesIndex: ", tempInputFeaturesIndex, " }");
+        console.log("TEST { replaceInputFeatures: ", replaceInputFeatures, " }");
+        console.log("TEST { optionValue: ", optionValue, " }");
+        
+        setInputFeatures(replaceInputFeatures);
+        
+        // console.log("TEST { inputFeaturesIndex: ", inputFeaturesIndex, " }");
+        // console.log("TEST { inputFeatures:", inputFeatures, " }");
+    }
+    
+    const selectedValue = (event) => {
+        setOptionValue(parseInt(event.target.value));
+        mapInputFeatures();
+    }
     
     return (
         <div className="yesNo">
@@ -32,7 +39,7 @@ function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFe
             
             <FormControl className="yesNo__formControl">
                 <FormLabel>Choose One Only</FormLabel>
-                    <RadioGroup className="yesNo__radioGroup" value={optionValue} onChange={event => setOptionValue(parseInt(event.target.value))} >
+                    <RadioGroup className="yesNo__radioGroup" value={optionValue} onChange={event => selectedValue(event)} >
                     <FormControlLabel
                         className="yesNo__formControlLabel"
                         label={Questions[questionNumber]['options'][0]}

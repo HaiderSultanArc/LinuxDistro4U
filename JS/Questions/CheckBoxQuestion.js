@@ -8,28 +8,30 @@ function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inpu
     
     useEffect(
         () => {
-            let replaceInputFeatures = [...inputFeatures];
-            let tempInputFeaturesIndex = inputFeaturesIndex;
-            
-            for (let i = 0; i < optionValues.length; i++) {
-                tempInputFeaturesIndex++;
-                replaceInputFeatures[tempInputFeaturesIndex] = optionValues[i];
-                // console.log("TEST { replaceInputFeatures[", tempInputFeaturesIndex, "]: ", replaceInputFeatures[tempInputFeaturesIndex], " }");
-                // console.log("TEST { optionValues[", i,"]: ", optionValues[i], " }");
-            }
-            
-            // console.log("TEST { tempInputFeaturesIndex: ", tempInputFeaturesIndex, " }");
-            // console.log("TEST { replaceInputFeatures: ", replaceInputFeatures, " }");
-            
-            setInputFeatures(replaceInputFeatures);
-            
-            // console.log("TEST { inputFeaturesIndex:", inputFeaturesIndex, " }");
-            // console.log("TEST { inputFeatures:", inputFeatures, " }");
-            
             setOptionValues([...Questions[questionNumber]['values']]);
             setNumberOfOptionsSelected(0);
         }, [questionNumber]
     )
+    
+    const mapInputFeatures = () => {
+        let replaceInputFeatures = [...inputFeatures];
+        let tempInputFeaturesIndex = inputFeaturesIndex;
+        
+        for (let i = 0; i < optionValues.length; i++) {
+            replaceInputFeatures[tempInputFeaturesIndex] = optionValues[i];
+            console.log("TEST { replaceInputFeatures[", tempInputFeaturesIndex, "]: ", replaceInputFeatures[tempInputFeaturesIndex], " }");
+            console.log("TEST { optionValues[", i,"]: ", optionValues[i], " }");
+            tempInputFeaturesIndex++;
+        }
+        
+        // console.log("TEST { tempInputFeaturesIndex: ", tempInputFeaturesIndex, " }");
+        // console.log("TEST { replaceInputFeatures: ", replaceInputFeatures, " }");
+        
+        setInputFeatures(replaceInputFeatures);
+        
+        // console.log("TEST { inputFeaturesIndex:", inputFeaturesIndex, " }");
+        // console.log("TEST { inputFeatures:", inputFeatures, " }");
+    }
     
     const selectedValue = (optionNumber) => (event) => {
         let values = [...optionValues];
@@ -70,8 +72,9 @@ function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inpu
         }
         
         values[optionNumber] = currentValue;
+        setOptionValues(values);
         
-        setOptionValues(values);   
+        mapInputFeatures();
     }
     
     return (
