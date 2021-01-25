@@ -24,4 +24,15 @@
     .page__arcIon {
         grid-area: arcIon;
     }
+    
+    .page__branding {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 1rem;
+        justify-self: center;
+        font-family: 'Goldman', cursive;
+        font-size: 1.2rem;
+        color: rgba(250, 160, 26, 0.6);
+        user-select: none;
+    }
 }

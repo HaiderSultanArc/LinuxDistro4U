@@ -28,7 +28,7 @@ function Header({questionNumber, setQuestionNumber}) {
     }
     
     return (
-        <div className="header">
+        <header className="header">
             <div className="header__pageTitle">
                 {
                     Questions[questionNumber]["questionNumber"] === 0 ? (
@@ -38,9 +38,8 @@ function Header({questionNumber, setQuestionNumber}) {
                     )
                 }
             </div>
+            
             <div className="header__navigation">
-                
-                
                 <IconButton onClick={previousQuestion} disabled={disableBackward}>
                     <ArrowBackIosRounded />
                 </IconButton>
@@ -48,12 +47,13 @@ function Header({questionNumber, setQuestionNumber}) {
                     <ArrowForwardIosRounded />
                 </IconButton>
             </div>
+            
             <div className="header__currentPageHelp">
                 <IconButton>
                     <InfoOutlined />
                 </IconButton>
             </div>
-        </div>
+        </header>
     )
 }
 

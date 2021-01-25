@@ -2,12 +2,31 @@ import { Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, For
 import React, { useEffect, useState } from 'react';
 import { Questions } from './QuestionsContent';
 
-function CheckBoxQuestion({questionNumber}) {
+function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex, setInputFeaturesIndex}) {
     const [optionValues, setOptionValues] = useState([...Questions[questionNumber]['values']]);
     const [numberOfOptionsSelected, setNumberOfOptionsSelected] = useState(0);
     
     useEffect(
         () => {
+            let replaceInputFeatures = [...inputFeatures];
+            let replaceInputFeaturesIndex = inputFeaturesIndex;
+            
+            for (let i = 0; i < optionValues.length; i++) {
+                replaceInputFeatures[replaceInputFeaturesIndex] = optionValues[i];
+                console.log("TEST { replaceInputFeatures[replaceInputFeaturesIndex]: ", replaceInputFeatures[replaceInputFeaturesIndex], " }");
+                console.log("TEST { optionValues[i]: ", optionValues[i], " }");
+                replaceInputFeaturesIndex++;
+            }
+            
+            replaceInputFeaturesIndex--;
+            
+            setInputFeaturesIndex(replaceInputFeaturesIndex);
+            setInputFeatures(replaceInputFeatures);
+            
+            console.log("TEST { inputFeaturesIndex: ", inputFeaturesIndex, " }");
+            console.log("TEST { replaceInputFeaturesValues: ", replaceInputFeatures, " }");
+            console.log("TEST { inputFeatures:", inputFeatures, " }");
+            
             setOptionValues([...Questions[questionNumber]['values']]);
             setNumberOfOptionsSelected(0);
         }, [questionNumber]
@@ -53,9 +72,7 @@ function CheckBoxQuestion({questionNumber}) {
         
         values[optionNumber] = currentValue;
         
-        setOptionValues(values);
-        
-        console.log("TEST { optionValues: ", optionValues, " }");
+        setOptionValues(values);   
     }
     
     return (

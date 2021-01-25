@@ -2,11 +2,23 @@ import { FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioG
 import React, { useEffect, useState } from 'react';
 import { Questions } from './QuestionsContent';
 
-function YesNoQuestion({questionNumber}) {
+function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex, setInputFeaturesIndex}) {
     const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values']);
     
     useEffect(
         () => {
+            let replaceInputFeaturesValues = [...inputFeatures];
+            let replaceInputFeaturesIndex = inputFeaturesIndex;
+            
+            replaceInputFeaturesValues[replaceInputFeaturesIndex] = optionValue;
+            
+            setInputFeaturesIndex(replaceInputFeaturesIndex);
+            setInputFeatures(replaceInputFeaturesValues);
+            
+            console.log("TEST { inputFeaturesIndex: ", inputFeaturesIndex, " }");
+            console.log("TEST { optionValue: ", optionValue, " }");
+            console.log("TEST { inputFeatures:", inputFeatures, " }");
+            
             setOptionValue(Questions[questionNumber]['values']);
         }, [questionNumber]
     )

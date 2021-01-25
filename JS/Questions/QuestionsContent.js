@@ -12,6 +12,34 @@ export const QuestionsContentProvider = (props) => {
     )
 }
 
+export const InputFeaturesContext = createContext();
+
+export const InputFeaturesProvider = (props) => {
+    const [inputFeatures, setInputFeatures] = useState(
+        [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 
+         50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 
+         50]
+    )
+    
+    return (
+        <InputFeaturesContext.Provider value={[inputFeatures, setInputFeatures]}>
+            {props.children}
+        </InputFeaturesContext.Provider>
+    )
+}
+
+export const InputFeaturesIndexContext = createContext();
+
+export const InputFeaturesIndexProvider = (props) => {
+    const [inputFeaturesIndex, setInputFeaturesIndex] = useState(0);
+    
+    return (
+        <InputFeaturesIndexContext.Provider value={[inputFeaturesIndex, setInputFeaturesIndex]} >
+            {props.children}
+        </InputFeaturesIndexContext.Provider>
+    )
+}
+
 export const Questions = [
     {
         "questionNumber": 0,
@@ -51,7 +79,7 @@ export const Questions = [
             "Arch",
             "Linux From Scratch"
         ],
-        "values": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50  ],
+        "values": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
         "max-selection": 2,
         "speech": [
             "Many Linux Distros are based of on other Distros, some are Independant while some are based on Linux From Scratch!. All have their own Ideology and Concept.",
@@ -157,7 +185,7 @@ export const Questions = [
         ],
         "values": 50,
         "speech": [
-            "Linux can be quite a handful when it comes to difficulty. But Some Distros are Specifically focus on Begginers.",
+            "Linux can be quite a handful when it comes to difficulty. But Some Distros are Specifically focused on Begginers.",
             "You can Check in Help Section to see which Distros are Begginner Friendly",
             "So Do you want it as a YES?"
         ]
@@ -192,6 +220,70 @@ export const Questions = [
             "Linux can require some testing and prior Knowledge before starting. Don't worry, you can just install Distros, with Live Feature, on a USB and Test it as much as you want before actually switching to it.",
             "It's a pretty handy feature most of Linux Distros provide. If You want to know which Linux Distro provides this feature you can check the Help Section.",
             "So, do you want to test it or it does'nt matter?"
+        ]
+    },
+    {
+        "questionNumber": 8,
+        "type": "yesNo",
+        "question": "Do you want your Distro to run on very Lower End PC and Raspberry Pi as well?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": 50,
+        "speech": [
+            "Linux is generally a lightweight OS. But some of it's Distros are Lightweight enough to run on a very lower end machine or a Raspberry Pi.",
+            "Every Linux Distro is Lightweight some are just extra light. You can chech about them in Help Section.",
+            "So, You want to run a Raspberry Pi or a very lower end PC?"
+        ]
+    },
+    {
+        "questionNumber": 9,
+        "type": "yesNo",
+        "question": "Do you want your Distro to work as a Server as well?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": 50,
+        "speech": [
+            "Linux is Known for Security and Privacy. So it's naturally an option for a Server Machine.",
+            "Some Distros are specially designed to work both as Server and Desktop. Hence very versatile. You can learn more about them in Help Section.",
+            "So, are you gonna make your PC a Server as well?"
+        ]
+    },
+    {
+        "questionNumber": 10,
+        "type": "yesNo",
+        "question": "Do you want your Distro to be Source Based?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": 50,
+        "speech": [
+            "Linux Distros are fast but the Distros that are Directly based on Source are Faster.",
+            "You can check more about Source Based Distros in Help Section",
+            "So, you want a Source Based Distro?"
+        ]
+    },
+    {
+        "questionNumber": 11,
+        "type": "yesNo",
+        "question": "Do you want your Distro to have an Easy Set Up?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": 50,
+        "speech": [
+            "Linux Distros requires a Set up before you can use them. It can be quite a Headache. But most Distros provide a Graphical Set up, which is fairly.",
+            "You can read about Setting Up Linux in Help Section.",
+            "So, you want an Easier Set Up?"
         ]
     }
 ]
