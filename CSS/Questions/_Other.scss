@@ -49,4 +49,14 @@
             font-size: 3vw;
         }
     }
+    
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 8vw;
+        }
+        
+        p {
+            font-size: 5vw;
+        }
+    }
 }

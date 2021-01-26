@@ -1,9 +1,15 @@
 .question {
     display: flex;
-    align-content: center;
+    align-content: center; // try item
     justify-content: center;
     height: 90vh;
     text-align: justify;
     
     // border: dotted black;
+    
+    @media (max-width: 500px) {
+        align-items: flex-start;
+        height: 100%;
+        margin-top: 2rem;
+    }
 }

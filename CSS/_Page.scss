@@ -39,7 +39,6 @@
     }
     
     @media (max-width: 500px) {
-        
         grid-template-areas: "header"
                              "question"
                              "question"
@@ -50,5 +49,6 @@
                              "question"
                              "arcIon"
                              "arcIon";
+        // border: black dotted;
     }
 }

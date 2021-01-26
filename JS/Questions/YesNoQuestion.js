@@ -7,7 +7,7 @@ function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFe
     
     useEffect(
         () => {
-            setOptionValue(Questions[questionNumber]['values']);
+            setOptionValue(Questions[questionNumber]['values'][0]);
         }, [questionNumber]
     )
     

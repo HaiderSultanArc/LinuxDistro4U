@@ -16,7 +16,7 @@
         flex-direction: column;
         width: max-content;
         max-width: 60vw;
-        border: 5px solid #faa21a;
+        border: 3px solid #faa21a;
         padding: 80px 50px;
         margin: 30px auto;
         border-radius: 50%;
@@ -44,7 +44,7 @@
         }
         
         .arcIon__speech_circle1 {
-            border: 5px solid #faa21a;
+            border: 3px solid #faa21a;
             position: absolute;
             width: 25px;
             padding: 20px;
@@ -65,7 +65,7 @@
         }
         
         .arcIon__speech_circle2 {
-            border: 5px solid #faa21a;
+            border: 3px solid #faa21a;
             position: absolute;
             width: 5px;
             padding: 10px 15px;
@@ -76,10 +76,6 @@
     }
     
     @media (max-width: 1024px) {
-        img {
-            // width: 16rem;
-        }
-        
         .arcIon__speech {
             top: 0;
             right: 18rem;
@@ -95,13 +91,8 @@
     }
     
     @media (max-width: 900px) {
-        img {
-            // width: 14rem;
-        }
-        
         .arcIon__speech {
             right: 16rem;
-            // max-width: 55vw;
             padding: 40px 25px;
             top: -2rem;
             
@@ -116,14 +107,14 @@
             
             .arcIon__speech_circle2 {
                 top: 12rem;
-                right: -3rem;
+                right: -2rem;
             }
         }
     }
     
     @media (max-width: 768px) {
         img {
-            // width: 16rem;
+            width: 16rem;
         }
         
         .arcIon__speech {
@@ -142,8 +133,36 @@
     }
     
     @media (max-width: 500px) {
+        justify-content: flex-end;
+        
         img {
-            // width: 10rem;
+            width: 10rem;
+        }
+        
+        .arcIon__speech {
+            top: -10rem;
+            right: 1rem;
+            padding: 0.6rem;
+            margin: 0;
+            // border-radius: 0%;
+            border: 2px solid #faa21a;
+            max-width: 88%;
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .arcIon__speech_circle1 {
+                top: 15rem;
+                right: 8rem;
+                border: 2px solid #faa21a;
+            }
+            
+            .arcIon__speech_circle2 {
+                top: 17rem;
+                right: 6.2rem;
+                border: 2px solid #faa21a;
+            }
         }
     }
 }

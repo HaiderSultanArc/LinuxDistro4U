@@ -36,4 +36,16 @@
             margin-top: 1rem;   
         }
     }
+    
+    @media (max-width: 500px) {
+        margin: 1rem;
+        
+        .yesNo__question {
+            font-size: 1rem;
+        }
+        
+        .yesNo__formControl {
+            margin: 2rem;
+        }
+    }
 }
