@@ -1,0 +1,18 @@
+.questionHelpBackground {
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right top, rgba(125, 120, 255, 0.88), rgba(255, 200, 119, 0.99));
+    z-index: 2;
+    
+    .questionHelp {
+        background: white;
+        min-height: 80vh;
+        width: 60%;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        border-radius: 1rem;
+        z-index: 3;
+    }
+}

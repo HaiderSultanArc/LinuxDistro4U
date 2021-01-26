@@ -1,6 +1,7 @@
 import { IconButton } from '@material-ui/core';
 import { ArrowBackIosRounded, ArrowForwardIosRounded, InfoOutlined } from '@material-ui/icons';
 import React, { useState } from 'react';
+import QuestionHelp from './Questions/QuestionHelp';
 import { Questions } from './Questions/QuestionsContext';
 
 
@@ -56,33 +57,52 @@ function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInput
         }
     }
     
+    const showPageHelp = () => {
+        let pageHelp = document.getElementById('currentPageHelp');
+        
+        if (pageHelp.style.zIndex === "-100") {
+            pageHelp.style.zIndex = "1";
+            pageHelp.style.display = "flex";
+        }
+        else {
+            pageHelp.style.zIndex = "-100";
+            pageHelp.style.display = "none";
+        }
+    }
+    
     return (
-        <header className="header">
-            <div className="header__pageTitle">
-                {
-                    Questions[questionNumber]["questionNumber"] === 0 ? (
-                        <p>...</p>
-                    ) : (
-                        <p>Question {Questions[questionNumber]["questionNumber"]}</p>
-                    )
-                }
-            </div>
+        <>
+            <header className="header">
+                <div className="header__pageTitle">
+                    {
+                        Questions[questionNumber]["questionNumber"] === 0 ? (
+                            <p>...</p>
+                        ) : (
+                            <p>Question {Questions[questionNumber]["questionNumber"]}</p>
+                        )
+                    }
+                </div>
+                
+                <div className="header__navigation">
+                    <IconButton onClick={previousQuestion} disabled={disableBackward}>
+                        <ArrowBackIosRounded />
+                    </IconButton>
+                    <IconButton onClick={nextQuestion} disabled={disableForward}>
+                        <ArrowForwardIosRounded />
+                    </IconButton>
+                </div>
+                
+                <div className="header__currentPageHelp">
+                    <IconButton onClick={showPageHelp}>
+                        <InfoOutlined  />
+                    </IconButton>
+                </div>
+            </header>
             
-            <div className="header__navigation">
-                <IconButton onClick={previousQuestion} disabled={disableBackward}>
-                    <ArrowBackIosRounded />
-                </IconButton>
-                <IconButton onClick={nextQuestion} disabled={disableForward}>
-                    <ArrowForwardIosRounded />
-                </IconButton>
+            <div id="currentPageHelp" >
+                <QuestionHelp /> 
             </div>
-            
-            <div className="header__currentPageHelp">
-                <IconButton>
-                    <InfoOutlined />
-                </IconButton>
-            </div>
-        </header>
+        </>
     )
 }
 

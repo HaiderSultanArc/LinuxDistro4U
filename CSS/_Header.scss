@@ -39,3 +39,9 @@
         }
     }
 }
+
+#currentPageHelp {
+    position: fixed;
+    display: none;
+    z-index: -100;
+}

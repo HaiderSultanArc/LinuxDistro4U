@@ -11,27 +11,17 @@ function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFe
         }, [questionNumber]
     )
     
-    const mapInputFeatures = () => {
-        let replaceInputFeatures = [...inputFeatures];
-        let tempInputFeaturesIndex = inputFeaturesIndex;
-        
-        replaceInputFeatures[tempInputFeaturesIndex] = optionValue;
-        tempInputFeaturesIndex++;
-        
-        // console.log("TEST { tempInputFeaturesIndex: ", tempInputFeaturesIndex, " }");
-        console.log("TEST { replaceInputFeatures: ", replaceInputFeatures, " }");
-        console.log("TEST { optionValue: ", optionValue, " }");
-        
-        setInputFeatures(replaceInputFeatures);
-        
-        // console.log("TEST { inputFeaturesIndex: ", inputFeaturesIndex, " }");
-        // console.log("TEST { inputFeatures:", inputFeatures, " }");
-    }
-    
-    const selectedValue = (event) => {
-        setOptionValue(parseInt(event.target.value));
-        mapInputFeatures();
-    }
+    useEffect(
+        () => {
+            let replaceInputFeatures = [...inputFeatures];
+            let tempInputFeaturesIndex = inputFeaturesIndex;
+            
+            replaceInputFeatures[tempInputFeaturesIndex] = optionValue;
+            tempInputFeaturesIndex++;
+            
+            setInputFeatures(replaceInputFeatures);
+        }, [optionValue]
+    )
     
     return (
         <div className="yesNo">
@@ -39,7 +29,7 @@ function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFe
             
             <FormControl className="yesNo__formControl">
                 <FormLabel>Choose One Only</FormLabel>
-                    <RadioGroup className="yesNo__radioGroup" value={optionValue} onChange={event => selectedValue(event)} >
+                    <RadioGroup className="yesNo__radioGroup" value={optionValue} onChange={event => setOptionValue(parseInt(event.target.value))} >
                     <FormControlLabel
                         className="yesNo__formControlLabel"
                         label={Questions[questionNumber]['options'][0]}

@@ -4,17 +4,6 @@
     
     // grid-template-columns: repeat(auto-fit, minmax(50vw 100vw));
     
-    grid-template-areas: "header header header header header header header header header header"
-                         "question question question question question question question question arcIon arcIon"
-                         "question question question question question question question question arcIon arcIon"
-                         "question question question question question question question question arcIon arcIon"
-                         "question question question question question question question question arcIon arcIon"
-                         "question question question question question question question question arcIon arcIon"
-                         "question question question question question question question question arcIon arcIon"
-                         "question question question question question question question question arcIon arcIon"
-                         "question question question question question question question question arcIon arcIon"
-                         "question question question question question question question question arcIon arcIon";
-                         
     .page__header {
         grid-area: header;
     }
@@ -26,6 +15,17 @@
     .page__arcIon {
         grid-area: arcIon;
     }
+    
+    grid-template-areas: "header header header header header header header header header header"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon"
+                         "question question question question question question question question arcIon arcIon";
     
     .page__branding {
         position: fixed;

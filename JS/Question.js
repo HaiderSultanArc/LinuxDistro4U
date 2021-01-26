@@ -28,10 +28,6 @@ function Question({questionNumber, setQuestionNumber, inputFeatures, setInputFea
                     )
                 )
             }
-            
-            {
-                console.log("TEST {\ninputFeaturesIndex: ", inputFeaturesIndex, "\ninputFeatures: ", inputFeatures, "\n}")
-            }
         </div>
     )
 }

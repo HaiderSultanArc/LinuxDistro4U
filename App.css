@@ -48,6 +48,12 @@
   }
 }
 
+#currentPageHelp {
+  position: fixed;
+  display: none;
+  z-index: -100;
+}
+
 .page {
   display: -ms-grid;
   display: grid;
@@ -498,6 +504,33 @@
   .yesNo .yesNo__formControl {
     margin: 2rem;
   }
+}
+
+.questionHelpBackground {
+  height: 95vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(125, 120, 255, 0.88)), to(rgba(255, 200, 119, 0.99)));
+  background: linear-gradient(to right top, rgba(125, 120, 255, 0.88), rgba(255, 200, 119, 0.99));
+  z-index: 2;
+}
+
+.questionHelpBackground .questionHelp {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 1rem;
+  z-index: 3;
 }
 
 * {

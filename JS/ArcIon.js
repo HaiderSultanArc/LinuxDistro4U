@@ -11,6 +11,14 @@ function ArcIon({questionNumber}) {
     
     useEffect(
         () => {
+            let arcIonButton = document.getElementById('arcIon__Button');
+            
+            setTimeout(() => arcIonButton.click(), 2500);
+        }, []
+    )
+    
+    useEffect(
+        () => {
             setSpeechIndex(0);
             displaySpeechSwitch();
             setDisableBackward(true);
@@ -61,7 +69,7 @@ function ArcIon({questionNumber}) {
     
     return (
         <div className="arcIon">
-            <IconButton onClick={displaySpeechSwitch}>
+            <IconButton id="arcIon__Button" onClick={displaySpeechSwitch}>
                 <img src={ArcIonImg} alt="Arc'Ion Distro Box" />
             </IconButton>
             
