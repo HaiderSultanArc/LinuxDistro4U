@@ -541,16 +541,40 @@
 
 .questionHelpBackground .questionHelp h2 {
   color: #faa21a;
+  font-size: 1.5vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 0.5rem;
 }
 
 .questionHelpBackground .questionHelp p {
   color: #151149;
+  font-size: 1.2vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
   margin-left: 4rem;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .questionHelpBackground .questionHelp h2 {
+    font-size: 2vw;
+  }
+  .questionHelpBackground .questionHelp p {
+    font-size: 1.4vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .questionHelpBackground .questionHelp {
+    padding: 1rem;
+  }
+  .questionHelpBackground .questionHelp h2 {
+    font-size: 3.2vw;
+  }
+  .questionHelpBackground .questionHelp p {
+    font-size: 2.6vw;
+    margin-left: 2rem;
+  }
 }
 
 * {

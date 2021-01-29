@@ -38,18 +38,32 @@ export const Questions = [
             "Click on Navigational Buttons in the Middle of the Header to Change Question Numbers. Arc'Ion Notes down your Response as soon as you Respond, if you go to Next Question, your response for previous Question will be saved but if you decided to come back to previous question then Arc'Ion assumes you want to answer again and he Resets your previous Response to that Question, so you have to Answer again.",
             "Arc'Ion will put a control on Options for your Response so that you can stay on Track and don't select Options that are not Coorelating to each other.",
             "Arc'Ion suggests only the Distros that are used for Desktop/Daily usage, no 'Special Purpose' Distro will be Suggested. Arc'Ion also omits the Distros that are 'Dead' or are not Mature Enough.",
-            "Close this Section and Press Blue Button under the Text to Continue to the Questions",
+            "Close this Section and Press Blue Button under the Text to Continue to the Questions"
         ]
     },
     {
         "questionNumber": 0,
         "type": "other",
         "question": "CheckBox Type Questions",
-        "options": ["Check The Style You Like"],
+        "options": ["Check The Utilities You Like"],
         "speech": [
             "This Sections consists of Questions with Options as checkboxes, you can choose one or multiple or skip all of them (I would'nt Recommend Skipping).",
             "Some of the Questions might be too technical for a layman, don't worry! I have a general and easy reading material for each Question and it's options.",
             "Can you see that ! icon at the Top Right Corner of my Page? Click On that if you want some easy and concise Knowledge about the Stuff that I ask. Please don't Shy.",
+        ],
+        "help-headings": [
+            "CHECKBOX QUESTIONS",
+            "SKIPPING QUESTIONS",
+            "MAXIMUM SELECTION",
+            "RESPONSE CONTROL",
+            "CONTINUE TO NEXT QUESTION",
+        ],
+        "help-content": [
+            "These Questions are CheckBox type, you can Choose Multiple Options",
+            "You can Skip any Question you want but skipping most of them will significantly effect Arc'Ion's Final Suggestion. This may cause problems. That's why Skipping any Question is not Recommended",
+            "You can Read the Maximum Selection you may want to make for any Question, although Arc'Ion will not prohibit you from selecting more but the Form color will turn to Red if you make more than Desired Selections.",
+            "Arc'Ion will put a control on Options for your Response so that you can stay on Track and don't select Options that are not Coorelating to each other.",
+            "Close this Section and Press Blue Button under the Text to Continue to the Questions"
         ]
     },
     {
@@ -86,6 +100,30 @@ export const Questions = [
             "Many Linux Distros are based of on other Distros, some are Independant while some are based on Linux From Scratch!. All have their own Ideology and Concept.",
             "Please note that different base Distros have different advantages, consider that in your response.",
             "So What System do you prefer?"
+        ],
+        "help-headings": [
+            "INDEPENDANT",
+            "SLACKWARE",
+            "DEBIAN",
+            "UBUNTU",
+            "FEDORA",
+            "RED HAT",
+            "OPENSUSE",
+            "GENTOO",
+            "ARCH",
+            "LINUX FROM SCRATCH"
+        ],
+        "help-content": [
+            "These are the Distros that are not based on any other Distro. Some of them may provide Base for Other Distros while other are just small scale Distros made by an Organisation.",
+            "Slackware is the Oldest Linux Distro that is still being maintained. To put it simple this is the Old School type OS. It's Aim is Stability with Ease of Use. It includes latest Softwares with Retaining Traditional Style UI",
+            "Debian is the most famous and widely used Base Distro. It's goal is Free and Fully Featured Operating System.",
+            "Ubuntu is a complete desktop Linux operating system, freely available with both community and professional support. The Ubuntu community is built on the ideas enshrined in the Ubuntu Manifesto: that software should be available free of charge, that software tools should be usable by people in their local language and despite any disabilities, and that people should have the freedom to customise and alter their software in whatever way they see fit.",
+            "Fedora contains software distributed under a free and open-source license and aims to be on the leading edge of such technologies. Fedora has a reputation for focusing on innovation, integrating new technologies early on and working closely with upstream Linux communities.",
+            "Red Hat owns Fedora and Red Hat Enterprise Linux. Red Hat uses strict trademark rules to restrict free re-distribution of its officially supported versions of Red Hat Enterprise Linux, but still freely provides its source code. Third-party derivatives can be built and redistributed by stripping away non-free components.",
+            "The openSUSE project is a community program sponsored by SUSE Linux and other companies. Promoting the use of Linux everywhere, this program provides free, easy access to openSUSE, a complete Linux distribution. The openSUSE project has three main goals: make openSUSE the easiest Linux for anyone to obtain and the most widely used Linux distribution; leverage open source collaboration to make openSUSE the world's most usable Linux distribution and desktop environment for new and experienced Linux users; dramatically simplify and open the development and packaging processes to make openSUSE the platform of choice for Linux developers and software vendors.",
+            "Gentoo Linux is a versatile and fast, completely free Linux distribution geared towards developers and network professionals. It is set to satisfy more experienced users.",
+            "Arch Linux is an independently developed, x86_64-optimised Linux distribution targeted at competent Linux users. Arch Linux defines simplicity as without unnecessary additions or modifications. Arch is a pragmatic distribution rather than an ideological one. The principles here are only useful guidelines. Ultimately, design decisions are made on a case-by-case basis through developer consensus. Evidence-based technical analysis and debate are what matter, not politics or popular opinion. Whereas many GNU/Linux distributions attempt to be more user-friendly, Arch Linux has always been, and shall always remain user-centric. The distribution is intended to fill the needs of those contributing to it, rather than trying to appeal to as many users as possible. It is targeted at the proficient GNU/Linux user, or anyone with a do-it-yourself attitude who is willing to read the documentation, and solve their own problems. Arch Linux is a general-purpose distribution. Upon installation, only a command-line environment is provided: rather than tearing out unneeded and unwanted packages, the user is offered the ability to build a custom system by choosing among thousands of high-quality packages.",
+            "Linux From Scratch (LFS) is a project that provides you with step-by-step instructions for building your own customized Linux system entirely from source. "
         ]
     },
     {
@@ -98,7 +136,7 @@ export const Questions = [
             "FluxBox",
             "Fast Light Window Manager (flwm)",
             "GNOME",
-            "Joe's Window Manger",
+            "Joe's Window Manger (JWM)",
             "KDE Plasma",
             "Lightweight X11 Desktop Environment (LXDE)",
             "Lightweight Qt Desktop (LXQt)",
@@ -113,7 +151,7 @@ export const Questions = [
             ["FluxBox", "MATE", "XForms Common Environment (XFCE)"],
             ["Fast Light Window Manager (flwm)"],
             ["GNOME", "KDE Plasma", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
-            ["Joe's Window Manger"],
+            ["Joe's Window Manger (JWM)"],
             ["Cinnamon", "GNOME", "KDE Plasma", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
             ["Cinnamon", "Enlightment", "Lightweight X11 Desktop Environment (LXDE)", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
             ["Cinnamon", "Enlightment", "GNOME", "KDE Plasma", "Lightweight X11 Desktop Environment (LXDE)", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
@@ -126,6 +164,20 @@ export const Questions = [
             "Desktop is the face of an OS. Having a liking towards a Style is completely normal. You might like Simple Syles, or more Robust Styles. Windows like or Apple like, or maybe old school type, who knows...",
             "If you have hard time choosing you can checkout the Help Section from top right corner. I will tell you what each desktop feels like. It will help you, I am Confident.",
             "So, do you prefer a Style? You can change your Desktop in Linux Afterwards as well, It's Linux afterall... So don't get too confused on this."
+        ],
+        "help-headings": [
+            "CINNAMON",
+            "ENLIGHTMENT",
+            "FLUXBOX",
+            "FAST LIGHT WINDOW MANAGER (FLWM)",
+            "GNOME",
+            "JOE'S WINDOW MANAGER (JWM)",
+            "KDE PLASMA",
+            "LIGHTWEIGHT X11 DESKTOP ENVIRONMENT (LXDE)",
+            "LIGHTWEIGHT QT DESKTOP (LXQT)",
+            "MATE",
+            "OPENBOX",
+            "XFORMS COMMON ENVIRONMENT (XFCE)"
         ]
     },
     {

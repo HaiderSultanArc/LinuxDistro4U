@@ -22,16 +22,41 @@
         
         h2 {
             color: #faa21a;
+            font-size: 1.5vw;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin-bottom: 0.5rem;
         }
         
         p {
             color: #151149;
+            font-size: 1.2vw;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: justify;
             margin-left: 4rem;
             margin-bottom: 4rem;
+        }
+        
+        @media (max-width: 1024px) {
+            h2 {
+                font-size: 2vw;
+            }
+            
+            p {
+                font-size: 1.4vw;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            padding: 1rem;
+            
+            h2 {
+                font-size: 3.2vw;
+            }
+            
+            p {
+                font-size: 2.6vw;
+                margin-left: 2rem;
+            }
         }
     }
 }
