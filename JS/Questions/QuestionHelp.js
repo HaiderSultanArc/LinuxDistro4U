@@ -1,10 +1,20 @@
 import React from 'react'
+import { Questions } from './QuestionsContext'
 
-function QuestionHelp() {
+function QuestionHelp({questionNumber}) {
     return (
         <div className="questionHelpBackground">
             <div className="questionHelp">
-                
+                {
+                    Questions[questionNumber]['help-headings'].map(
+                        (heading, headingNumber) => (
+                            <div>
+                                <h2>{heading}</h2>
+                                <p>{Questions[questionNumber]['help-content'][headingNumber]}</p>
+                            </div>
+                        )
+                    )
+                }
             </div>
         </div>
     )

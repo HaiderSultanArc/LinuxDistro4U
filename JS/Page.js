@@ -11,7 +11,7 @@ function Page() {
     const [inputFeaturesIndex, setInputFeaturesIndex] = useContext(InputFeaturesIndexContext);
     
     return (
-        <div className="page">
+        <section className="page">
             <div className="page__header">
                 <Header questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} inputFeaturesIndex={inputFeaturesIndex} setInputFeaturesIndex={setInputFeaturesIndex} />
             </div>
@@ -24,8 +24,8 @@ function Page() {
                 <ArcIon questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
             </div>
             
-            <h1 className="page__branding">LinuxDistro4U Powerd by ArcCode</h1>
-        </div>
+            <h1 className="page__branding">LinuxDistro4U by ArcCode</h1>
+        </section>
     )
 }
 

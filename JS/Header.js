@@ -1,5 +1,5 @@
 import { IconButton } from '@material-ui/core';
-import { ArrowBackIosRounded, ArrowForwardIosRounded, InfoOutlined } from '@material-ui/icons';
+import { ArrowBackIosRounded, ArrowForwardIosRounded, Close, InfoOutlined } from '@material-ui/icons';
 import React, { useState } from 'react';
 import QuestionHelp from './Questions/QuestionHelp';
 import { Questions } from './Questions/QuestionsContext';
@@ -8,6 +8,7 @@ import { Questions } from './Questions/QuestionsContext';
 function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInputFeaturesIndex}) {
     const [disableBackward, setDisableBackward] = useState(false);
     const [disableForward, setDisableForward] = useState(false);
+    const [isHelpOpen, setIsHelpOpen] = useState(false);
     
     const previousQuestion = () => {
         if (questionNumber > 1) {
@@ -61,12 +62,18 @@ function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInput
         let pageHelp = document.getElementById('currentPageHelp');
         
         if (pageHelp.style.zIndex === "-100") {
-            pageHelp.style.zIndex = "1";
+            pageHelp.style.opacity = "1";
+            pageHelp.style.zIndex = "100";
             pageHelp.style.display = "flex";
+            
+            setIsHelpOpen(true);
         }
         else {
+            pageHelp.style.opacity = "0";
             pageHelp.style.zIndex = "-100";
-            pageHelp.style.display = "none";
+            // pageHelp.style.display = "none";
+            
+            setIsHelpOpen(false);
         }
     }
     
@@ -76,7 +83,11 @@ function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInput
                 <div className="header__pageTitle">
                     {
                         Questions[questionNumber]["questionNumber"] === 0 ? (
-                            <p>...</p>
+                            isHelpOpen ? (
+                                <p>HELP</p>
+                            ) : (
+                                <p>...</p>
+                            )
                         ) : (
                             <p>Question {Questions[questionNumber]["questionNumber"]}</p>
                         )
@@ -84,23 +95,29 @@ function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInput
                 </div>
                 
                 <div className="header__navigation">
-                    <IconButton onClick={previousQuestion} disabled={disableBackward}>
+                    <IconButton onClick={previousQuestion} disabled={disableBackward || isHelpOpen}>
                         <ArrowBackIosRounded />
                     </IconButton>
-                    <IconButton onClick={nextQuestion} disabled={disableForward}>
+                    <IconButton onClick={nextQuestion} disabled={disableForward || isHelpOpen}>
                         <ArrowForwardIosRounded />
                     </IconButton>
                 </div>
                 
                 <div className="header__currentPageHelp">
                     <IconButton onClick={showPageHelp}>
-                        <InfoOutlined  />
+                        {
+                            isHelpOpen ? (
+                                <Close />
+                            ) : (
+                                <InfoOutlined  />
+                            )
+                        }
                     </IconButton>
                 </div>
             </header>
             
             <div id="currentPageHelp" >
-                <QuestionHelp /> 
+                <QuestionHelp questionNumber={questionNumber} />
             </div>
         </>
     )

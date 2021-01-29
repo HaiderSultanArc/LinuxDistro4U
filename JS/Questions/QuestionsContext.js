@@ -19,9 +19,26 @@ export const Questions = [
         "question": "LinuxDistro4U",
         "options": ["Find the best Linux Distro for yourself"],
         "speech": [
-            "HI! I am Arc'Ion. I am a Bot, and I'll be your Helper today! Click the Forward Button Below the Dialogue text.",
+            "HI! I am Arc'Ion. I am a Bot, and I'll be your Helper today! Click the Forward and Backwards Button Below the Dialogue text to control my Speech.",
             "I'll lead you through a set of Questions and you'll Answer them. Based on your response I'll tell you what Linux Distro Suits you.",
-            "Click on me to Close the Dialogue and Start by Pressing the Forward Button on the middle of Header above. You can change Question Numbers from there."
+            "Navigation Buttons in the middle of Header above can be used to change Question Numbers.",
+            "Please Note that if you Choose to return to a Question You will have to Answer that Question Again.",
+            "I record your answers and make space available for next Question. If you came back, I assume you want to answer again, so I delete your previous Recorded Answers for that Question",
+            "With that said, let's Continue. Please Click on me to close Dialogue (or Open it again) and press Blue Button under the Text."
+        ],
+        "help-headings": [
+            "ARC'ION HELP",
+            "QUESTIONS NAVIGATION",
+            "RESPONSE CONTROLS",
+            "LINUX DISTROS INCLUDED",
+            "CONTINUE TO NEXT QUESTION",
+        ],
+        "help-content": [
+            "Click on Arc'Ion to get his Help. Click on the Buttons under his Speech Text to Control his Speech",
+            "Click on Navigational Buttons in the Middle of the Header to Change Question Numbers. Arc'Ion Notes down your Response as soon as you Respond, if you go to Next Question, your response for previous Question will be saved but if you decided to come back to previous question then Arc'Ion assumes you want to answer again and he Resets your previous Response to that Question, so you have to Answer again.",
+            "Arc'Ion will put a control on Options for your Response so that you can stay on Track and don't select Options that are not Coorelating to each other.",
+            "Arc'Ion suggests only the Distros that are used for Desktop/Daily usage, no 'Special Purpose' Distro will be Suggested. Arc'Ion also omits the Distros that are 'Dead' or are not Mature Enough.",
+            "Close this Section and Press Blue Button under the Text to Continue to the Questions",
         ]
     },
     {
@@ -30,7 +47,7 @@ export const Questions = [
         "question": "CheckBox Type Questions",
         "options": ["Check The Style You Like"],
         "speech": [
-            "This Sections consists of Questions with Options as checkboxes, you can choose one or multiple or skip all of them.",
+            "This Sections consists of Questions with Options as checkboxes, you can choose one or multiple or skip all of them (I would'nt Recommend Skipping).",
             "Some of the Questions might be too technical for a layman, don't worry! I have a general and easy reading material for each Question and it's options.",
             "Can you see that ! icon at the Top Right Corner of my Page? Click On that if you want some easy and concise Knowledge about the Stuff that I ask. Please don't Shy.",
         ]
@@ -52,6 +69,18 @@ export const Questions = [
             "Linux From Scratch"
         ],
         "values": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
+        "classes": [
+            ["Independant"],
+            ["Slackware"],
+            ["Debian", "Ubuntu"],
+            ["Debian", "Ubuntu"],
+            ["Fedora", "Red Hat"],
+            ["Fedora", "Red Hat"],
+            ["OpenSuse"],
+            ["Gentoo"],
+            ["Arch"],
+            ["Linux From Scratch"]
+        ],
         "max-selection": 2,
         "speech": [
             "Many Linux Distros are based of on other Distros, some are Independant while some are based on Linux From Scratch!. All have their own Ideology and Concept.",
@@ -67,7 +96,7 @@ export const Questions = [
             "Cinnamon",
             "Enlightment",
             "FluxBox",
-            "Fast Light Window Manager",
+            "Fast Light Window Manager (flwm)",
             "GNOME",
             "Joe's Window Manger",
             "KDE Plasma",
@@ -78,6 +107,20 @@ export const Questions = [
             "XForms Common Environment (XFCE)",
         ],
         "values": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
+        "classes": [
+            ["Cinnamon", "Enlightment", "KDE Plasma", "Lightweight X11 Desktop Environment (LXDE)", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
+            ["Cinnamon", "Enlightment", "Lightweight X11 Desktop Environment (LXDE)", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
+            ["FluxBox", "MATE", "XForms Common Environment (XFCE)"],
+            ["Fast Light Window Manager (flwm)"],
+            ["GNOME", "KDE Plasma", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
+            ["Joe's Window Manger"],
+            ["Cinnamon", "GNOME", "KDE Plasma", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
+            ["Cinnamon", "Enlightment", "Lightweight X11 Desktop Environment (LXDE)", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
+            ["Cinnamon", "Enlightment", "GNOME", "KDE Plasma", "Lightweight X11 Desktop Environment (LXDE)", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
+            ["Cinnamon", "Enlightment", "FluxBox", "GNOME", "KDE Plasma", "Lightweight X11 Desktop Environment (LXDE)", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"],
+            ["OpenBox"],
+            ["Cinnamon", "Enlightment", "FluxBox", "GNOME", "KDE Plasma", "Lightweight X11 Desktop Environment (LXDE)", "Lightweight Qt Desktop (LXQt)", "MATE", "XForms Common Environment (XFCE)"]
+        ],
         "max-selection": 6,
         "speech": [
             "Desktop is the face of an OS. Having a liking towards a Style is completely normal. You might like Simple Syles, or more Robust Styles. Windows like or Apple like, or maybe old school type, who knows...",
@@ -101,7 +144,7 @@ export const Questions = [
             "RPM",
             "Snap",
             "SRC",
-            "TaxPkg",
+            "TazPkg",
             "Tar.xz",
             "TCE",
             "TLZ",
@@ -109,6 +152,25 @@ export const Questions = [
             "XBPS"
         ],
         "values": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
+        "classes": [
+            ["Cards"],
+            ["deb", "Flatpak", "Snap"],
+            ["Entropy"],
+            ["deb", "Flatpak", "RPM", "Snap"],
+            ["Nix"],
+            ["Pacman"],
+            ["PET"],
+            ["Portage"],
+            ["Flatpak", "RPM"],
+            ["deb", "Flatpak", "Snap"],
+            ["SRC"],
+            ["TazPkg"],
+            ["Tar.xz"],
+            ["TCE"],
+            ["TLZ"],
+            ["TXZ"],
+            ["XBPS"]
+        ],
         "max-selection": 3,
         "speech": [
             "Package Managers take care of Software management on your OS. Surely everyone is comfortable with some kind of management system.",
@@ -128,6 +190,13 @@ export const Questions = [
             "OpenOffice"
         ],
         "values": [50, 50, 50, 50, 50],
+        "classes": [
+            ["Calligra", "gOffice", "LibreOffice"],
+            ["Calligra", "gOffice", "KOffice", "LibreOffice", "OpenOffice"],
+            ["gOffice", "KOffice", "OpenOffice"],
+            ["Calligra", "gOffice", "LibreOffice"],
+            ["Calligra", "KOffice", "OpenOffice"]
+        ],
         "max-selection": 3,
         "speech": [
             "Office Suits help you with your everyday usage of computers. Different Office Suits come with different Features.",
@@ -253,7 +322,7 @@ export const Questions = [
         ],
         "values": [50],
         "speech": [
-            "Linux Distros requires a Set up before you can use them. It can be quite a Headache. But most Distros provide a Graphical Set up, which is fairly.",
+            "Linux Distros requires a Set up before you can use them. It can be quite a Headache. But most Distros provide a Graphical Set up, which is fairly Easy.",
             "You can read about Setting Up Linux in Help Section.",
             "So, you want an Easier Set Up?"
         ]

@@ -4,15 +4,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right top, rgba(125, 120, 255, 0.88), rgba(255, 200, 119, 0.99));
+    background: linear-gradient(to right top, rgba(125, 120, 255, 0.9), rgba(255, 200, 119, 0.9));
     z-index: 2;
     
     .questionHelp {
         background: white;
-        min-height: 80vh;
-        width: 60%;
-        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-        border-radius: 1rem;
+        box-sizing: border-box;
+        padding: 2rem;
+        min-height: 85vh;
+        max-height: 85vh;
+        width: 96%;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+        border-radius: 0.6rem;
         z-index: 3;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        
+        h2 {
+            color: #faa21a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 0.5rem;
+        }
+        
+        p {
+            color: #151149;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+            margin-left: 4rem;
+            margin-bottom: 4rem;
+        }
     }
 }

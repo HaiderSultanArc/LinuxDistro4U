@@ -5,11 +5,15 @@ import { Questions } from './QuestionsContext';
 function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex}) {
     const [optionValues, setOptionValues] = useState([...Questions[questionNumber]['values']]);
     const [numberOfOptionsSelected, setNumberOfOptionsSelected] = useState(0);
+    const [isMaxSelected, setIsMaxSelected] = useState(false);
+    const [firstSelected, setFirstSelected] = useState(["empty"]);
     
     useEffect(
         () => {
             setOptionValues([...Questions[questionNumber]['values']]);
             setNumberOfOptionsSelected(0);
+            setIsMaxSelected(false);
+            setFirstSelected(["empty"]);
         }, [questionNumber]
     )
     
@@ -43,6 +47,8 @@ function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inpu
                 
                 currentValue = 50;
                 setNumberOfOptionsSelected(numberOfOptionsSelected - 1);
+                
+                setFirstSelected(["empty"]);
             }
         }
         else if (numberOfOptionsSelected > 1) {
@@ -62,18 +68,36 @@ function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inpu
             
             currentValue = 100;
             
+            setFirstSelected(Questions[questionNumber]['classes'][optionNumber]);
+            
             setNumberOfOptionsSelected(numberOfOptionsSelected + 1);
         }
         
         values[optionNumber] = currentValue;
         setOptionValues(values);   
+        
+        if (values.filter(value => value === 100).length > Questions[questionNumber]['max-selection']) {
+            setIsMaxSelected(true);
+        }
+        else {
+            setIsMaxSelected(false);
+        }
+    }
+    
+    const checkClass = (option) => {
+        if (firstSelected.find(findOption => findOption === option) || firstSelected.find(findOption => findOption === "empty")) {
+            return false;
+        }
+        else {
+            return true;
+        }
     }
     
     return (
         <div className="checkbox">
             <p className="checkbox__question" >{Questions[questionNumber]['question']}</p>
             
-            <FormControl className="checkbox__formControl" >
+            <FormControl className="checkbox__formControl" error={isMaxSelected} disabled={isMaxSelected} >
                 <FormLabel>Pick {Questions[questionNumber]['max-selection']} Atmost</FormLabel>
                 <FormGroup className="checkbox__formGroup" row>
                     {
@@ -89,6 +113,7 @@ function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inpu
                                         <Checkbox 
                                             className="checkbox__option"
                                             checked={optionValues[optionNumber] === 100 ? (true) : (false)}
+                                            disabled={checkClass(option)}
                                         />
                                     }
                                 />

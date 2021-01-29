@@ -1,28 +1,31 @@
 #------------------------------ IMPORTS ------------------------------#
 import numpy as np
 import pandas as pd
+import seaborn as sns
 import tensorflow as tf
-from tensorflow.keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
-
+from tensorflow.keras.utils import to_categorical
 
 #------------------------------ DATA ------------------------------#
-trainingData = pd.read_csv('LinuxDistro4U.csv')
-testingData = pd.read_csv('LinuxDistro4UTestData.csv')
+trainingData = pd.read_csv('C:/Users/Maham/Documents/HS/Artificial Intelligence/LinuxDistro4U/LinuxDistro4U.csv')
+testingData = pd.read_csv('C:/Users/Maham/Documents/HS/Artificial Intelligence/LinuxDistro4U/LinuxDistro4UTestData.csv')
 
-features = trainingData.iloc[:, :63]
-distros = trainingData.iloc[:, 63:]
+features = trainingData.iloc[:, :52]
+distros = trainingData.iloc[:, 52:]
+
+sns.pairplot(trainingData, hue="distro")
+
 distrosOneHot = pd.get_dummies(distros)
 
-testFeatures = testingData.iloc[:, :63]
-testDistros = testingData.iloc[:, 63:]
+testFeatures = testingData.iloc[:, :52]
+testDistros = testingData.iloc[:, 52:]
 testDistrosOneHot = pd.get_dummies(testDistros)
 
 
 #------------------------------ MODEL ------------------------------#
 distroPredictor = tf.keras.models.Sequential(
     [
-        tf.keras.layers.Dense(2016, activation="relu", input_shape=(63,)),
+        tf.keras.layers.Dense(2016, activation="relu", input_shape=(52,)),
         tf.keras.layers.Dense(1008, activation="relu"),
         tf.keras.layers.Dense(504, activation="relu"),
         tf.keras.layers.Dense(252, activation="relu"),
@@ -36,8 +39,7 @@ distroPredictor.summary()
 
 
 #------------------------------ TRAINING ------------------------------#
-distrosPredictorHistory = distroPredictor.fit(features, distrosOneHot, batch_size=48, epochs=12)
-
+distrosPredictorHistory = distroPredictor.fit(features, distrosOneHot, batch_size=36, epochs=12)
 
 #------------------------------ PREDICTION ------------------------------#
 if __name__ == '__main__':
@@ -57,3 +59,5 @@ if __name__ == '__main__':
         print("Actual Distro: ", testDistros[np.where(testDistrosOneHot[testDistroNumber] == testDistrosOneHot[testDistroNumber].max())[0]])
 
         print("\n\n\n")
+
+    distroPredictorEvaluation = distroPredictor.evaluate(testFeatures, testDistrosOneHot, batch_size=1)
