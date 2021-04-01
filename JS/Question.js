@@ -1,4 +1,5 @@
 import React from 'react';
+import LinuxDistro4UPredictor from './LinuxDistro4UPredictor/LinuxDistro4UPredictor';
 import CheckBoxQuestion from './Questions/CheckBoxQuestion';
 import Other from './Questions/Other';
 import { Questions } from './Questions/QuestionsContext';
@@ -24,7 +25,11 @@ function Question({questionNumber, setQuestionNumber, inputFeatures, setInputFea
                             inputFeaturesIndex={inputFeaturesIndex}
                         />
                     ) : (
-                        <Other questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
+                        (Questions[questionNumber]['type'] === 'other') ? (
+                            <Other questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
+                        ) : (
+                            <LinuxDistro4UPredictor questionNumber={questionNumber} inputFeatures={inputFeatures} />
+                        )
                     )
                 )
             }

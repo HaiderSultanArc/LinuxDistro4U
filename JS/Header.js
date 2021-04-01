@@ -15,13 +15,9 @@ function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInput
             if (Questions[questionNumber - 1]['questionNumber'] !== 0) {
                 let replaceInputFeaturesIndex = inputFeaturesIndex;
                 
-                console.log("TEST { Before replaceInputFeaturesIndex: ", replaceInputFeaturesIndex, " }");
-            
                 for (let i = Questions[questionNumber - 1]["values"].length - 1; i >= 0; i--) {
                     replaceInputFeaturesIndex--;
                 }
-                
-                console.log("TEST { After replaceInputFeaturesIndex: ", replaceInputFeaturesIndex, " }");
                 
                 setInputFeaturesIndex(replaceInputFeaturesIndex);
             }
@@ -39,13 +35,9 @@ function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInput
             if (Questions[questionNumber]['questionNumber'] !== 0) {
                 let replaceInputFeaturesIndex = inputFeaturesIndex;
                 
-                console.log("TEST { Before replaceInputFeaturesIndex: ", replaceInputFeaturesIndex, " }");
-            
                 for (let i = 0; i < Questions[questionNumber]["values"].length; i++) {
                     replaceInputFeaturesIndex++;
                 }
-                
-                console.log("TEST { After replaceInputFeaturesIndex: ", replaceInputFeaturesIndex, " }");
                 
                 setInputFeaturesIndex(replaceInputFeaturesIndex);
             }
@@ -71,7 +63,6 @@ function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInput
         else {
             pageHelp.style.opacity = "0";
             pageHelp.style.zIndex = "-100";
-            // pageHelp.style.display = "none";
             
             setIsHelpOpen(false);
         }
