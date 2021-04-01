@@ -18,7 +18,6 @@ function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFe
             
             replaceInputFeatures[tempInputFeaturesIndex] = optionValue;
             tempInputFeaturesIndex++;
-            
             setInputFeatures(replaceInputFeatures);
         }, [optionValue]
     )

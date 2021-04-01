@@ -8,7 +8,7 @@ function QuestionHelp({questionNumber}) {
                 {
                     Questions[questionNumber]['help-headings'].map(
                         (heading, headingNumber) => (
-                            <div>
+                            <div key={`${headingNumber}`} >
                                 <h2>{heading}</h2>
                                 <p>{Questions[questionNumber]['help-content'][headingNumber]}</p>
                             </div>

@@ -178,6 +178,21 @@ export const Questions = [
             "MATE",
             "OPENBOX",
             "XFORMS COMMON ENVIRONMENT (XFCE)"
+        ],
+        "help-content": [
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur."     
         ]
     },
     {
@@ -228,6 +243,44 @@ export const Questions = [
             "Package Managers take care of Software management on your OS. Surely everyone is comfortable with some kind of management system.",
             "These can be confusing, I know, why don't you read about them in Help Section? It's meant for Layman understanding.",
             "So, you decided which one you wanna choose?"
+        ],
+        "help-headings": [
+            "CARDS",
+            "DEB",
+            "ENTROPY",
+            "FLATPAK",
+            "NIX",
+            "PACMAN",
+            "PET",
+            "PORTAGE",
+            "RPM",
+            "SNAP",
+            "SRC",
+            "TAZPKG",
+            "TAR.XZ",
+            "TCE",
+            "TLZ",
+            "TXZ",
+            "XBPS"
+        ],
+        "help-content": [
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur." 
         ]
     },
     {
@@ -254,6 +307,20 @@ export const Questions = [
             "Office Suits help you with your everyday usage of computers. Different Office Suits come with different Features.",
             "You must have Heard of Microsoft Office, that is also a Office Suite, but for Windows. If you want to learn more about Office Suite options in Linux, you should head to the Help Section.",
             "So, you know what Office Suite fits your choice of Features and Accessibility?"
+        ],
+        "help-headings": [
+            "CALLIGRA",
+            "GOFFICE",
+            "KOFFICE",
+            "LIBREOFFICE",
+            "OPENOFFICE"
+        ],
+        "help-content": [
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur.",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum doloribus aliquam mollitia reiciendis, illum explicabo quas libero soluta, laboriosam aut vitae ut odio! Sit molestiae inventore porro consectetur."
         ]
     },
     {
@@ -265,12 +332,22 @@ export const Questions = [
             "This is more Critical and Decisive Section for me to give you a better Suggestion.",
             "Although you can still skip any question but I highly reocommend NOT DOING THAT. You can consult Help Section if you feel like.",
             "With that being said, let's continue."
+        ],
+        "help-headings": [
+            "YES NO TYPE QUESTIONS",
+            "DECISIVE SECTION",
+            "SKIPPING THE QUESTIONS"
+        ],
+        "help-content": [
+            "In this type Arc'Ion will ask you about some Features and you will have 3 options from which you have to Choose 1; YES, NO and May or May not be.",
+            "This is most Critical and Decisive Section. This will define the Features of the Linux Distro that Arc'Ion will be Suggesting.",
+            "You can still skip the Question aka Select May or May not be, but this is not Recommended. Please Try to Answer maximum of the Questions."
         ]
     },
     {
         "questionNumber": 5,
         "type": "yesNo",
-        "question": "Do You want your Distro to be Begginer Friendly?",
+        "question": "Do You want your Distro to be Beginner Friendly?",
         "options": [
             "Yes",
             "No",
@@ -281,6 +358,14 @@ export const Questions = [
             "Linux can be quite a handful when it comes to difficulty. But Some Distros are Specifically focused on Begginers.",
             "You can Check in Help Section to see which Distros are Begginner Friendly",
             "So Do you want it as a YES?"
+        ],
+        "help-headings": [
+            "BEGINNER FRIENDLY DISTROS",
+            "BENIFITS"
+        ],
+        "help-content": [
+            "Beginner Friendly means the Distro is easy to use for the Person who has no or a little knowledge about Linux.",
+            "This can be very helpful as switching to a completely new Environment can be very confusing. Linux particularly is a Difficult Operating System, but Linux has some Very easy and Beginner Friendly Distros while still retaining much it's Legacy, Security and Control."
         ]
     },
     {
@@ -297,6 +382,16 @@ export const Questions = [
             "Linux is Free and Open-Source, but being 100% Free is not true for Linux as well, but some of the Distros truely hold the name for being 100% Free",
             "I want to mention that being 100% Free does'nt necassarily means a Good Thing. You might actually don't want that. Consult the Help Section to find out the Drawbacks.",
             "So you want your Distro to be 100% Free?"
+        ],
+        "help-headings": [
+            "FREE DISTROS",
+            "BENIFITS",
+            "DRAWBACKS"
+        ],
+        "help-content": [
+            "Free Distros means the Distros that are 100% Free, which are Recommended and Endorsed by The Free Software Foundation.",
+            "These distros are ready-to-use full systems whose developers have made a commitment to follow the Guidelines for Free System Distributions. This means they will include, and propose, exclusively free software. They will reject nonfree applications, nonfree programming platforms, nonfree drivers, nonfree firmware “blobs”, nonfree games, and any other nonfree software, as well as nonfree manuals or documentation.",
+            "This can be problematic for some Users who want to use the Softwares that are not Free. This includes any Software that requires some kind of Payment from Users. Linux is Generally Free but it also it does'nt mean you can't use Non-free softwares on this Platform. Same can not be said for the Distros that claims to be 100% free."
         ]
     },
     {
@@ -313,6 +408,14 @@ export const Questions = [
             "Linux can require some testing and prior Knowledge before starting. Don't worry, you can just install Distros, with Live Feature, on a USB and Test it as much as you want before actually switching to it.",
             "It's a pretty handy feature most of Linux Distros provide. If You want to know which Linux Distro provides this feature you can check the Help Section.",
             "So, do you want to test it or it does'nt matter?"
+        ],
+        "help-headings": [
+            "LIVE DISTROS",
+            "BENEFITS"
+        ],
+        "help-content": [
+            "These Distros provide you with a Feature of running the whole Distro, from boot to all the Functionality, right from the USB or a CD/DVD, without making any changes to your own Operating System.",
+            "This can be very helpful for Testing purposes. Suppose you respond well and Arc'Ion suggests you a Distro, you can Test it before actually switching to it, by downloading it in your USB or CD/DVD and run live on your Computer along with your current OS, without any changes to your current OS. Moreover you can use it completely like that aside from testing. You don't event have to worry about the Storage Drive or Machine. Just plug it in and run your Linux on any Machine."
         ]
     },
     {
@@ -329,6 +432,16 @@ export const Questions = [
             "Linux is generally a lightweight OS. But some of it's Distros are Lightweight enough to run on a very lower end machine or a Raspberry Pi.",
             "Every Linux Distro is Lightweight some are just extra light. You can chech about them in Help Section.",
             "So, You want to run a Raspberry Pi or a very lower end PC?"
+        ],
+        "help-headings": [
+            "LIGHT-WEIGHT DISTRO",
+            "LOWER END PC",
+            "RASPBERRY PI"
+        ],
+        "help-content": [
+            "Linux is a Light Weight OS, but still all of it's Distros are not meant to run on very Lower End PCs and Raspberry Pi, but some are so light-weight that they can run on them and give life to them. These Distros are not Bulked with Unneccassary stuff and do not Flex much on their UI. They keep it simple and light.",
+            "Lower End PCs are the machines with low specs that can not run a modern OS at it's full potential. They are used for daily simple usage like Movies, Songs, Seasons and Browsing Internet etc.",
+            "The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python. It’s capable of doing everything you’d expect a desktop computer to do, from browsing the internet and playing high-definition video, to making spreadsheets, word-processing, and playing games."
         ]
     },
     {
@@ -345,26 +458,20 @@ export const Questions = [
             "Linux is Known for Security and Privacy. So it's naturally an option for a Server Machine.",
             "Some Distros are specially designed to work both as Server and Desktop. Hence very versatile. You can learn more about them in Help Section.",
             "So, are you gonna make your PC a Server as well?"
+        ],
+        "help-headings": [
+            "SERVER DISTROS",
+            "BENEFITS",
+            "DRAWBACKS"
+        ],
+        "help-content": [
+            "Linux is Known for Security and Privacy. So it's naturally an option for a Server Machine. A server is a computer software or a machine that offers services to other programs or devices, referred to as “clients“. There are different types of servers: web servers, database servers, application servers, cloud computing servers, file servers, mail servers, DNS servers and much more.",
+            "This can be useful if you are working on Servers or want a Server in General. Linux is Free and Open Source which means you can check for Erros and Bugs and improve the Security on your own as well. It's also Stable, Reliable and Flexible.",
+            "Servers can be quite bulky and heavy which means they require significant resources to work properly."
         ]
     },
     {
         "questionNumber": 10,
-        "type": "yesNo",
-        "question": "Do you want your Distro to be Source Based?",
-        "options": [
-            "Yes",
-            "No",
-            "May or May not be"
-        ],
-        "values": [50],
-        "speech": [
-            "Linux Distros are fast but the Distros that are Directly based on Source are Faster.",
-            "You can check more about Source Based Distros in Help Section",
-            "So, you want a Source Based Distro?"
-        ]
-    },
-    {
-        "questionNumber": 11,
         "type": "yesNo",
         "question": "Do you want your Distro to have an Easy Set Up?",
         "options": [
@@ -377,6 +484,79 @@ export const Questions = [
             "Linux Distros requires a Set up before you can use them. It can be quite a Headache. But most Distros provide a Graphical Set up, which is fairly Easy.",
             "You can read about Setting Up Linux in Help Section.",
             "So, you want an Easier Set Up?"
+        ],
+        "help-headings": [
+            "EASY SET UP",
+            "BENEFITS"
+        ],
+        "help-content": [
+            "Easy Set Up means a Graphical Wizard that leads you through the Installation Process.",
+            "It is easy to follow and helps new users to not mess the things up."
+        ]
+    },
+    {
+        "questionNumber": 11,
+        "type": "yesNo",
+        "question": "Do you want your Distro to work on Old Computers?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": [50],
+        "speech": [
+            "Linux can really put life in some dead machines. Remember your Old School Computer on which you played Sega Genesis Games in 90s? Well why not try firing it up again?",
+            "Remember that if a distro can run on old computers it does'nt necassarily means it's specifically made for old Computers, it will work just fine on any Modern Machine as well.",
+            "So you want to give life to some old stuff?"
+        ],
+        "help-headings": [
+            "OLD COMPUTERS"
+        ],
+        "help-content": [
+            "Well there's no hard definition of an Old Computer, it's just that you can tell if a computer is old or not. In general x86 and early x64 Architecture would be considered old computers"
+        ]
+    },
+    {
+        "questionNumber": 12,
+        "type": "yesNo",
+        "question": "Do you want your Distro to Support Gaming?",
+        "options": [
+            "Yes",
+            "No",
+            "May or May not be"
+        ],
+        "values": [50],
+        "speech": [
+            "Linux isn't the best option when it comes to Gaming. That title goes to Windows. Nevertheless there are a few Distros that can actually provide a Good Gaming Experience",
+            "Go to Help Section to learn more about Gaming on Linux",
+            "So you want Gaming on Linux?"
+        ],
+        "help-headings": [
+            "GAMING",
+            "BENEFITS"
+        ],
+        "help-content": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt doloremque. Consectetur illo, nisi praesentium facere et dolorem obcaecati enim!",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequatur debitis odit quidem accusamus eveniet rerum laudantium itaque. Mollitia, natus?"
+        ]
+    },
+    {
+        "questionNumber": 0,
+        "type": "result",
+        "question": "",
+        "options": [
+            "Depending on your responses, I think this is the best Distro 4U"
+        ],
+        "speech": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quae similique asperiores numquam quo id, ipsam consectetur esse minus quas.",
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia unde error reprehenderit molestias quidem aut quae, facilis mollitia eum adipisci.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis a quae laboriosam maiores fuga eius eaque corrupti impedit perferendis!"
+        ],
+        "help-headings": [
+            ""
+        ],
+        "help-content": [
+            ""
         ]
     }
 ]

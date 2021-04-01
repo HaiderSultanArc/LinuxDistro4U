@@ -47,7 +47,6 @@ function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inpu
                 
                 currentValue = 50;
                 setNumberOfOptionsSelected(numberOfOptionsSelected - 1);
-                
                 setFirstSelected(["empty"]);
             }
         }
@@ -67,9 +66,7 @@ function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inpu
             }
             
             currentValue = 100;
-            
             setFirstSelected(Questions[questionNumber]['classes'][optionNumber]);
-            
             setNumberOfOptionsSelected(numberOfOptionsSelected + 1);
         }
         
