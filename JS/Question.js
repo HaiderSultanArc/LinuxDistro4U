@@ -28,7 +28,7 @@ function Question({questionNumber, setQuestionNumber, inputFeatures, setInputFea
                         (Questions[questionNumber]['type'] === 'other') ? (
                             <Other questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
                         ) : (
-                            <LinuxDistro4UPredictor questionNumber={questionNumber} inputFeatures={inputFeatures} />
+                            <LinuxDistro4UPredictor questionNumber={questionNumber} inputFeatures={inputFeatures}/>
                         )
                     )
                 )
