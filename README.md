@@ -18,10 +18,10 @@ Visit Website here: [LinuxDistr4U](https://linux-distro-4u.web.app/)
 ### Techologies used:
 The project was divided into 2 parts:
 1. Machine Learning Model
-2. Web Development
+  * For Machine Learning, I worked in Python Tensorflow <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" />
 
-* For Machine Learning, I worked in Python Tensorflow <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" />
-* For Web Development, I worked in ReactJS <img alt="React" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> and Firebase <img alt="Firebase" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" /> for hosting. I also used TensoflowJS <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" /> to import my Tensorflow.Keras Model.
+3. Web Development
+  * For Web Development, I worked in ReactJS <img alt="React" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> and Firebase <img alt="Firebase" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" /> for hosting. I also used TensoflowJS <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" /> to import my Tensorflow.Keras Model.
 
 ### Things I learnt:
 * Synthasizing Data for Machine Learning
