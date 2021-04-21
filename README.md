@@ -52,6 +52,8 @@ The project was divided into 2 parts:
 - [ ] Re-Train the Model
 - [ ] Host version 3.0 on Firebase
 
+<br />
+
 ### CONNECT WITH ME <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" height="25px" />
 
 [<img align="left" alt="haidersultanarc @ Gmail" width="22px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Gmail.svg" />][gmail]
@@ -64,3 +66,10 @@ The project was divided into 2 parts:
 [![Twitter Follow](https://img.shields.io/twitter/follow/HaiderSultanArc?color=1b6ee9&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FHaiderSultanArc&screen_name=HaiderSultanArc)<br>
 [<img align="left" alt="haidersultanarc @ Instagram" width="22px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Instagram.svg" />][instagram]
 [![Insta Follow](https://img.shields.io/badge/%20-Follow-black?color=1b6ee9&label=Follow%20%40HaiderSultanArc&style=for-the-badge)](https://www.instagram.com/haidersultanarc/)<br>
+
+[Gmail]: (mailto:haidersultanarc@gmail.com?subject=From%20GitHub&body=Hi,%20there.%20Found%20you%20from%20GitHub.)
+[linkedin]: https://linkedin.com/in/haidersultanarc
+[Github]: https://github.com/HaiderSultanArc
+[twitter]: https://twitter.com/HaiderSultanArc
+[instagram]: https://instagram.com/haidersultanarc
+[ArcCode]: https://github.com/ArcCodeTeam
