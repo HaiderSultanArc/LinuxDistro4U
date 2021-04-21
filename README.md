@@ -16,5 +16,5 @@ The project was divided into 2 parts:
 1. Machine Learning Model
 2. Web Development
 
-For Machine Learning, I worked in Python <img alt="Python" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" /> (Tensorflow <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" /> and Keras <img alt="Keras" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/keras/keras.png" />).
-
+For Machine Learning, I worked in Python <img alt="Python" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" /> (Tensorflow <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" />)
+For Web Development, I worked in ReactJS <img align="left" alt="React" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> and Firebase <img align="left" alt="Firebase" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" /> for hosting.
