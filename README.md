@@ -44,8 +44,10 @@ The project was divided into 2 parts:
 - [ ] Re-Desgn the Response Page
 - [ ] Host version 1.5 on Firebase
 - [ ] Include Linux Distros that are Active for 5 or more years and can be used as Desktop
+- [ ] Re-Synthesis the Training Data
 - [ ] Re-Train the Model
 - [ ] Host version 2.0 on Firebase
 - [ ] Include Linux Distros that are Active for 5 or more years and are special purpose
+- [ ] Re-Synthesis the Training Data
 - [ ] Re-Train the Model
 - [ ] Host version 3.0 on Firebase
