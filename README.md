@@ -31,7 +31,7 @@ The project was divided into 2 parts:
 * Writing security script using Google Cloud Console
 
 ### TODO:
-- [x] Create a Linux Distro Library with all there features (Only Distros that can be used as Desktop, are active for more than 10 years are included)
+- [x] Create a Linux Distro Library with all their features (Only Distros that can be used as Desktop, are active for more than 10 years are included)
 - [x] Synthesis Data for Machine Learning
 - [x] Develop Machine Learning Model
 - [x] Develop pages for Website
