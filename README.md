@@ -8,8 +8,7 @@
 <br />
 
 ### Desciption:
-Choosing a Linux Distro can be difficult as there are a tone of options to go with. So, I made this little website. It's a Questionnaire based website that uses Machine Learning to predict the Linux Distro that will best suit you, based on your response.
-It makes the choice for you and give a single best name of distro for your priorities.
+Choosing a Linux Distro can be difficult as there is a ton of options to go with. So, I made this little website. It's a Questionnaire based website that uses Machine Learning to predict the Linux Distro that will best suit you, based on your response. It makes the choice for you and gives a single best name of the distro for your priorities.
 
 Visit Website here: [LinuxDistr4U](https://linux-distro-4u.web.app/)
 
