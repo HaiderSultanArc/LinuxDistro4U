@@ -23,10 +23,10 @@ The project was divided into 2 parts:
   * For Web Development, I worked in ReactJS <img alt="React" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> and Firebase <img alt="Firebase" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" /> for hosting. I also used TensoflowJS <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" /> to import my Tensorflow.Keras Model.
 
 ### Things I learnt:
-* Synthasizing Data for Machine Learning
+* Synthesizing Data for Machine Learning
 * Data analysis and Processing for Machine Learning
-* Developing Machine Learing Solution for the Data available
-* Implementing machine learing model with ReactJS Application
+* Developing Machine Learning Solution for the Data available
+* Implementing machine learning model with ReactJS Application
 * Writing security script using Google Cloud Console
 
 ### TODO:
