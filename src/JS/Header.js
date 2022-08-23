@@ -1,8 +1,8 @@
-import { IconButton } from '@material-ui/core';
-import { ArrowBackIosRounded, ArrowForwardIosRounded, Close, InfoOutlined } from '@material-ui/icons';
-import React, { useState } from 'react';
+import {ArrowBackIosRounded, ArrowForwardIosRounded, Close, InfoOutlined} from '@mui/icons-material';
+import {IconButton} from '@mui/material';
+import React, {useState} from 'react';
 import QuestionHelp from './Questions/QuestionHelp';
-import { Questions } from './Questions/QuestionsContext';
+import {Questions} from './Questions/QuestionsContext';
 
 
 function Header({questionNumber, setQuestionNumber, inputFeaturesIndex, setInputFeaturesIndex}) {

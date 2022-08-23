@@ -1,6 +1,6 @@
-import { Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel } from '@material-ui/core';
-import React, { useEffect, useState } from 'react';
-import { Questions } from './QuestionsContext';
+import {Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel} from '@mui/material';
+import React, {useEffect, useState} from 'react';
+import {Questions} from './QuestionsContext';
 
 function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex}) {
     const [optionValues, setOptionValues] = useState([...Questions[questionNumber]['values']]);

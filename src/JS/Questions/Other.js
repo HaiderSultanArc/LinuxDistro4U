@@ -1,7 +1,7 @@
-import { IconButton } from '@material-ui/core';
-import { ArrowForwardIosRounded } from '@material-ui/icons';
+import {ArrowForwardIosRounded} from '@mui/icons-material';
+import {IconButton} from '@mui/material';
 import React from 'react';
-import { Questions } from './QuestionsContext';
+import {Questions} from './QuestionsContext';
 
 function Other({questionNumber, setQuestionNumber}) {
     const start = () => {

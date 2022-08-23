@@ -30,6 +30,7 @@ The project was divided into 2 parts:
 * Writing security script using Google Cloud Console
 
 ### TODO:
+# Version 1.0:
 - [x] Create a Linux Distro Library with all their features (Only Distros that can be used as Desktop, are active for more than 10 years are included)
 - [x] Collect Data for Machine Learning
 - [x] Develop Machine Learning Model
@@ -39,16 +40,20 @@ The project was divided into 2 parts:
 - [x] Develop Input Vector From responses
 - [x] Integrating Tensorflow.Keras Model into Website using TensorflowJS, host model on firebase
 - [x] Host version 1.0 on Firebase
+# Version 1.5:
 - [x] Upgrade to React 18
+- [x] Updrade to mui
 - [ ] Move Linux Distro Library and Questions to Firebase
 - [ ] Setup CI/CD using Github Actions
 - [ ] Move TensorFlow Model to firebase using firebase-admin
 - [ ] Dockerize the solution
 - [ ] Host version 1.5 on Firebase
+# Version 2.0:
 - [ ] Include Linux Distros that are Active for 5 or more years and can be used as Desktop
 - [ ] Re-Collect the Training Data
 - [ ] Re-Train the Model and Deploy it
 - [ ] Host version 2.0 on Firebase
+# Version 3.0
 - [ ] Include Linux Distros that are Active for 5 or more years and are special purpose
 - [ ] Re-Collect the Training Data
 - [ ] Re-Train the Model

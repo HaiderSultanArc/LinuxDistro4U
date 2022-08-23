@@ -1,6 +1,6 @@
-import { FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup } from '@material-ui/core';
-import React, { useEffect, useState } from 'react';
-import { Questions } from './QuestionsContext';
+import {FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup} from '@mui/material';
+import React, {useEffect, useState} from 'react';
+import {Questions} from './QuestionsContext';
 
 function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex}) {
     const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values'][0]);
