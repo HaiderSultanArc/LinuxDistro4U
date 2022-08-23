@@ -31,23 +31,26 @@ The project was divided into 2 parts:
 
 ### TODO:
 - [x] Create a Linux Distro Library with all their features (Only Distros that can be used as Desktop, are active for more than 10 years are included)
-- [x] Synthesis Data for Machine Learning
+- [x] Collect Data for Machine Learning
 - [x] Develop Machine Learning Model
 - [x] Develop pages for Website
-- [x] Develop Arc'ion and his Speech System
+- [x] Develop Arc'Ion and his Speech System
 - [x] Develop Questionnaire System
 - [x] Develop Input Vector From responses
 - [x] Integrating Tensorflow.Keras Model into Website using TensorflowJS, host model on firebase
 - [x] Host version 1.0 on Firebase
+- [x] Upgrade to React 18
 - [ ] Move Linux Distro Library and Questions to Firebase
-- [ ] Re-Desgn the Response Page
+- [ ] Setup CI/CD using Github Actions
+- [ ] Move TensorFlow Model to firebase using firebase-admin
+- [ ] Dockerize the solution
 - [ ] Host version 1.5 on Firebase
 - [ ] Include Linux Distros that are Active for 5 or more years and can be used as Desktop
-- [ ] Re-Synthesis the Training Data
-- [ ] Re-Train the Model
+- [ ] Re-Collect the Training Data
+- [ ] Re-Train the Model and Deploy it
 - [ ] Host version 2.0 on Firebase
 - [ ] Include Linux Distros that are Active for 5 or more years and are special purpose
-- [ ] Re-Synthesis the Training Data
+- [ ] Re-Collect the Training Data
 - [ ] Re-Train the Model
 - [ ] Host version 3.0 on Firebase
 
