@@ -23,14 +23,17 @@ The project was divided into 2 parts:
   * For Web Development, I worked in ReactJS <img alt="React" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> and Firebase <img alt="Firebase" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" /> for hosting. I also used TensoflowJS <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" /> to import my Tensorflow.Keras Model.
 
 ### Things I learned:
-* Synthesizing Data for Machine Learning
+* Collecting Data for Machine Learning
 * Data analysis and Processing for Machine Learning
-* Developing Machine Learning Solution for the Data available
-* Implementing machine learning model with ReactJS Application
-* Writing security script using Google Cloud Console
+* Developing Machine Learning Models
+* Deploying ML models
+* Developing Frontend in ReactJS for ML Applications
+* Dockerization
+* Gitub Action CI/CD
+* Using Google Cloud Console
 
-### TODO:
-# Version 1.0:
+## Milestones:
+### Version 1.0:
 - [x] Create a Linux Distro Library with all their features (Only Distros that can be used as Desktop, are active for more than 10 years are included)
 - [x] Collect Data for Machine Learning
 - [x] Develop Machine Learning Model
@@ -40,7 +43,7 @@ The project was divided into 2 parts:
 - [x] Develop Input Vector From responses
 - [x] Integrating Tensorflow.Keras Model into Website using TensorflowJS, host model on firebase
 - [x] Host version 1.0 on Firebase
-# Version 1.5:
+### Version 1.5:
 - [x] Upgrade to React 18
 - [x] Updrade to mui
 - [ ] Move Linux Distro Library and Questions to Firebase
@@ -48,12 +51,12 @@ The project was divided into 2 parts:
 - [ ] Move TensorFlow Model to firebase using firebase-admin
 - [ ] Dockerize the solution
 - [ ] Host version 1.5 on Firebase
-# Version 2.0:
+### Version 2.0:
 - [ ] Include Linux Distros that are Active for 5 or more years and can be used as Desktop
 - [ ] Re-Collect the Training Data
 - [ ] Re-Train the Model and Deploy it
 - [ ] Host version 2.0 on Firebase
-# Version 3.0
+### Version 3.0
 - [ ] Include Linux Distros that are Active for 5 or more years and are special purpose
 - [ ] Re-Collect the Training Data
 - [ ] Re-Train the Model
