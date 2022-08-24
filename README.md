@@ -64,22 +64,10 @@ The project was divided into 2 parts:
 
 <br />
 
-### CONNECT WITH ME <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" height="25px" />
-
-[<img align="left" alt="haidersultanarc @ Gmail" width="22px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Gmail.svg" />][gmail]
-[![Gmail](https://img.shields.io/badge/%20-Send%20Mail-black?color=1b6ee9&label=haidersultanarc%40gmail.com&style=for-the-badge)](mailto:haidersultanarc@gmail.com?subject=From%20GitHub&body=Hi,%20there.%20Found%20you%20from%20GitHub.)<br>
-[<img align="left" alt="haidersultanarc @ LinkedIn" width="22px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Linkedin.svg" />][linkedin]
-[![LinkedIn Connect](https://img.shields.io/badge/%20-Connect-black?color=1b6ee9&label=Follow%20%40HaiderSultanArc&style=for-the-badge)](https://www.linkedin.com/in/haidersultanarc/)<br>
-[<img align="left" alt="haidersultanarc @ gitub" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />][Github]
-![GitHub followers](https://img.shields.io/github/followers/HaiderSultanArc?color=1b6ee9&label=Follow%20%40HaiderSultanArc&style=for-the-badge)<br>
-[<img align="left" alt="HaiderSultanArc @ Twitter" width="22px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Twitter.svg" />][twitter]
-[![Twitter Follow](https://img.shields.io/twitter/follow/HaiderSultanArc?color=1b6ee9&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FHaiderSultanArc&screen_name=HaiderSultanArc)<br>
-[<img align="left" alt="haidersultanarc @ Instagram" width="22px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Instagram.svg" />][instagram]
-[![Insta Follow](https://img.shields.io/badge/%20-Follow-black?color=1b6ee9&label=Follow%20%40HaiderSultanArc&style=for-the-badge)](https://www.instagram.com/haidersultanarc/)<br>
-
-[Gmail]: (mailto:haidersultanarc@gmail.com?subject=From%20GitHub&body=Hi,%20there.%20Found%20you%20from%20GitHub.)
-[linkedin]: https://linkedin.com/in/haidersultanarc
-[Github]: https://github.com/HaiderSultanArc
-[twitter]: https://twitter.com/HaiderSultanArc
-[instagram]: https://instagram.com/haidersultanarc
-[ArcCode]: https://github.com/ArcCodeTeam
+<h3 align="left">Connect with me:</h3>
+<p align="center">
+<a href="https://haidersultanarc-hs.web.app/"><img src="https://img.shields.io/badge/-Haider%20Sultan-3423A6?style=flat&logo=Google-Chrome&logoColor=white"/></a>
+<a href="https://linkedin.com/in/haidersultanarc"><img src="https://img.shields.io/badge/-HaiderSultanArc-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="mailto:haidersultanarc@gmail.com"><img src="https://img.shields.io/badge/-haidersultanarc@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+<a href="https://instagram.com/haidersultanarc"><img src="https://img.shields.io/badge/-@HaiderSultanArc-E4405F?style=flat&logo=Instagram&logoColor=white"/></a>
+<a href="https://facebook.com/haidersultanarc"><img src="https://img.shields.io/badge/-HaiderSultanArc-1877F2?style=flat&logo=Facebook&logoColor=white"/></a>
