@@ -1,6 +1,6 @@
 import * as tf from '@tensorflow/tfjs';
-import React, { useState } from 'react';
-import { Questions } from "../Questions/QuestionsContext";
+import React, {useState} from 'react';
+import {Questions} from "../Questions/QuestionsContext";
 import linuxDistros from "./linuxDistros";
 
 function LinuxDistro4UPredictor({questionNumber, inputFeatures}) {
