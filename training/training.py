@@ -28,4 +28,4 @@ distroPredictor.summary()
 
 distrosPredictorHistory = distroPredictor.fit(features, distrosOneHot, batch_size=44, epochs=8)
 distroPredictorEvaluation = distroPredictor.evaluate(testFeatures, testDistrosOneHot)
-distroPredictor.save("model/model.h5")
+distroPredictor.save("model/LinuxDistro4UPredictor.h5")
