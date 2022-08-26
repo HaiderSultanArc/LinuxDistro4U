@@ -46,9 +46,9 @@ The project was divided into 2 parts:
 ### Version 1.5:
 - [x] Upgrade to React 18
 - [x] Updrade to mui
-- [ ] Move Linux Distro Library and Questions to Firebase
+- [x] Move Linux Distro Library and Questions to Firebase
 - [ ] Setup CI/CD using Github Actions
-- [ ] Move TensorFlow Model to firebase using firebase-admin
+- [x] Move TensorFlow Model to firebase using firebase-admin
 - [ ] Dockerize the solution
 - [ ] Host version 1.5 on Firebase
 ### Version 2.0:
