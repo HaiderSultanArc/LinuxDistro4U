@@ -15,6 +15,11 @@ questions = [
         "type": "other",
         "question": "LinuxDistro4U",
         "options": ["Find the best Linux Distro for yourself"],
+        "values": [0],
+        "classes": [
+            [""],
+        ],
+        "max-selection": 0,
         "speech": [
             "HI! I am Arc'Ion. I am a Bot, and I'll be your Helper today! Click the Forward and Backwards Button Below the Dialogue text to control my Speech.",
             "I'll lead you through a set of Questions and you'll Answer them. Based on your response I'll tell you what Linux Distro Suits you.",
@@ -43,6 +48,11 @@ questions = [
         "type": "other",
         "question": "CheckBox Type Questions",
         "options": ["Check The Utilities You Like"],
+        "values": [0],
+        "classes": [
+            [""],
+        ],
+        "max-selection": 0,
         "speech": [
             "This Sections consists of Questions with Options as checkboxes, you can choose one or multiple or skip all of them (I would'nt Recommend Skipping).",
             "Some of the Questions might be too technical for a layman, don't worry! I have a general and easy reading material for each Question and it's options.",
@@ -323,6 +333,11 @@ questions = [
     {
         "questionNumber": 0,
         "type": "other",
+        "values": [0],
+        "classes": [
+            [""],
+        ],
+        "max-selection": 0,
         "question": "Yes/No Type Questions",
         "options": ["Select The Features and Benefits You Like"],
         "speech": [
@@ -351,6 +366,10 @@ questions = [
             "May or May not be"
         ],
         "values": [50],
+        "classes": [
+            [""]
+        ],
+        "max-selection": 1,
         "speech": [
             "Linux can be quite a handful when it comes to difficulty. But Some Distros are Specifically focused on Begginers.",
             "You can Check in Help Section to see which Distros are Begginner Friendly",
@@ -375,6 +394,10 @@ questions = [
             "May or May not be"
         ],
         "values": [50],
+        "classes": [
+            [""]
+        ],
+        "max-selection": 1,
         "speech": [
             "Linux is Free and Open-Source, but being 100% Free is not true for Linux as well, but some of the Distros truely hold the name for being 100% Free",
             "I want to mention that being 100% Free does'nt necassarily means a Good Thing. You might actually don't want that. Consult the Help Section to find out the Drawbacks.",
@@ -401,6 +424,10 @@ questions = [
             "May or May not be"
         ],
         "values": [50],
+        "classes": [
+            [""]
+        ],
+        "max-selection": 1,
         "speech": [
             "Linux can require some testing and prior Knowledge before starting. Don't worry, you can just install Distros, with Live Feature, on a USB and Test it as much as you want before actually switching to it.",
             "It's a pretty handy feature most of Linux Distros provide. If You want to know which Linux Distro provides this feature you can check the Help Section.",
@@ -425,6 +452,10 @@ questions = [
             "May or May not be"
         ],
         "values": [50],
+        "classes": [
+            [""]
+        ],
+        "max-selection": 1,
         "speech": [
             "Linux is generally a lightweight OS. But some of it's Distros are Lightweight enough to run on a very lower end machine or a Raspberry Pi.",
             "Every Linux Distro is Lightweight some are just extra light. You can chech about them in Help Section.",
@@ -451,6 +482,10 @@ questions = [
             "May or May not be"
         ],
         "values": [50],
+        "classes": [
+            [""]
+        ],
+        "max-selection": 1,
         "speech": [
             "Linux is Known for Security and Privacy. So it's naturally an option for a Server Machine.",
             "Some Distros are specially designed to work both as Server and Desktop. Hence very versatile. You can learn more about them in Help Section.",
@@ -477,6 +512,10 @@ questions = [
             "May or May not be"
         ],
         "values": [50],
+        "classes": [
+            [""]
+        ],
+        "max-selection": 1,
         "speech": [
             "Linux Distros requires a Set up before you can use them. It can be quite a Headache. But most Distros provide a Graphical Set up, which is fairly Easy.",
             "You can read about Setting Up Linux in Help Section.",
@@ -501,6 +540,10 @@ questions = [
             "May or May not be"
         ],
         "values": [50],
+        "classes": [
+            [""]
+        ],
+        "max-selection": 1,
         "speech": [
             "Linux can really put life in some dead machines. Remember your Old School Computer on which you played Sega Genesis Games in 90s? Well why not try firing it up again?",
             "Remember that if a distro can run on old computers it does'nt necassarily means it's specifically made for old Computers, it will work just fine on any Modern Machine as well.",
@@ -523,6 +566,10 @@ questions = [
             "May or May not be"
         ],
         "values": [50],
+        "classes": [
+            [""]
+        ],
+        "max-selection": 1,
         "speech": [
             "Linux isn't the best option when it comes to Gaming. That title goes to Windows. Nevertheless there are a few Distros that can actually provide a Good Gaming Experience",
             "Go to Help Section to learn more about Gaming on Linux",
@@ -544,6 +591,11 @@ questions = [
         "options": [
             "Depending on your responses, I think this is the best Distro 4U"
         ],
+        "values": [0],
+        "classes": [
+            [""],
+        ],
+        "max-selection": 0,
         "speech": [
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quae similique asperiores numquam quo id, ipsam consectetur esse minus quas.",
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia unde error reprehenderit molestias quidem aut quae, facilis mollitia eum adipisci.",
@@ -558,14 +610,21 @@ questions = [
     }
 ]
 
-for question in questions:
-    db.collection('questions').document().set(
-        {
-            "questionsNumber": question["questionNumber"],
-            "type": question["type"],
-            "question": question["question"],
-            "speech": question["speech"],
-            "help-headings": question["help-headings"],
-            "help-content": question["help-content"]
-        }
-    )
+try:
+    for question in questions:
+        db.collection('questions').document().set(
+            {
+                "questionsNumber": question["questionNumber"],
+                "type": question["type"],
+                "question": question["question"],
+                "options": question["options"],
+                "values": question["values"],
+                "classes": question["classes"],
+                "max-selection": question["max-selection"],
+                "speech": question["speech"],
+                "help-headings": question["help-headings"],
+                "help-content": question["help-content"]
+            }
+        )
+except Exception as error:
+    print(error)

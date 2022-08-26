@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React, {useContext} from 'react';
 import ArcIon from './ArcIon';
 import Header from './Header';
-import { InputFeaturesContext, InputFeaturesIndexContext } from './InputFeaturesContext';
+import {InputFeaturesContext, InputFeaturesIndexContext} from './InputFeaturesContext';
 import Question from './Question';
-import { QuestionContext } from './Questions/QuestionsContext';
+import {QuestionContext} from './Questions/QuestionsContext';
 
 function Page() {
     const [questionNumber, setQuestionNumber] = useContext(QuestionContext);
@@ -24,7 +24,7 @@ function Page() {
                 <ArcIon questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
             </div>
             
-            <h1 className="page__branding">LinuxDistro4U by ArcCode</h1>
+            <h1 className="page__branding">LinuxDistro4U by Haider Sultan</h1>
         </section>
     )
 }

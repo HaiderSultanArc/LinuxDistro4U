@@ -1,12 +1,42 @@
 import {Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel} from '@mui/material';
+import {collection, getDocs} from 'firebase/firestore';
 import React, {useEffect, useState} from 'react';
-import {Questions} from './QuestionsContext';
+import {db} from '../Firebase';
 
 function CheckBoxQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex}) {
+    const [Questions, setQuestions] = useState([{"questionNumber": 0, "type": "", "question": "", "options": [], "values": [], "classes": [[]], "max-selected": 0, "speech": [], "help-headings": [], "help-content": []}])
     const [optionValues, setOptionValues] = useState([...Questions[questionNumber]['values']]);
     const [numberOfOptionsSelected, setNumberOfOptionsSelected] = useState(0);
     const [isMaxSelected, setIsMaxSelected] = useState(false);
     const [firstSelected, setFirstSelected] = useState(["empty"]);
+    
+    useEffect(
+        () => {
+            getDocs(collection(db, "Questions")).then(
+                (snapShot) => {
+                    setQuestions(
+                        snapShot.forEach(
+                            (doc) => (
+                                {
+                                    "id": doc.id,
+                                    "questionNumber": doc.data().questionNumber,
+                                    "type": doc.data().type,
+                                    "question": doc.data().question,
+                                    "options": doc.data().options,
+                                    "values": doc.data().values,
+                                    "classes": doc.data().classes,
+                                    "max-selected": doc.data()["max-selected"],
+                                    "speech": doc.data().speech,
+                                    "help-headings": doc.data()["help-headings"],
+                                    "help-content": doc.data()["help-content"]
+                                }
+                            )
+                        )
+                    )
+                }
+            )
+        },[]
+    )
     
     useEffect(
         () => {

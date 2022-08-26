@@ -1,9 +1,39 @@
 import {FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup} from '@mui/material';
+import {collection, getDocs} from 'firebase/firestore';
 import React, {useEffect, useState} from 'react';
-import {Questions} from './QuestionsContext';
+import {db} from '../Firebase';
 
 function YesNoQuestion({questionNumber, inputFeatures, setInputFeatures, inputFeaturesIndex}) {
+    const [Questions, setQuestions] = useState([{"questionNumber": 0, "type": "", "question": "", "options": [], "values": [], "classes": [[]], "max-selected": 0, "speech": [], "help-headings": [], "help-content": []}])
     const [optionValue, setOptionValue] = useState(Questions[questionNumber]['values'][0]);
+    
+    useEffect(
+        () => {
+            getDocs(collection(db, "Questions")).then(
+                (snapShot) => {
+                    setQuestions(
+                        snapShot.forEach(
+                            (doc) => (
+                                {
+                                    "id": doc.id,
+                                    "questionNumber": doc.data().questionNumber,
+                                    "type": doc.data().type,
+                                    "question": doc.data().question,
+                                    "options": doc.data().options,
+                                    "values": doc.data().values,
+                                    "classes": doc.data().classes,
+                                    "max-selected": doc.data()["max-selected"],
+                                    "speech": doc.data().speech,
+                                    "help-headings": doc.data()["help-headings"],
+                                    "help-content": doc.data()["help-content"]
+                                }
+                            )
+                        )
+                    )
+                }
+            )
+        },[]
+    )
     
     useEffect(
         () => {

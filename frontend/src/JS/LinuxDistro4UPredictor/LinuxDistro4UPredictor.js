@@ -1,13 +1,35 @@
 import * as tf from '@tensorflow/tfjs';
 import * as tflite from '@tensorflow/tfjs-tflite';
-import React, {useState} from 'react';
+import {collection, getDocs} from "firebase/firestore";
+import React, {useEffect, useState} from 'react';
+import {db} from "../Firebase";
 import {Questions} from "../Questions/QuestionsContext";
-import linuxDistros from "./linuxDistros";
 
 function LinuxDistro4UPredictor({questionNumber, inputFeatures}) {
-    
     const [distro, setDistro] = useState(44);
     const inputTensor = tf.tensor(inputFeatures);
+    const [linuxDistros, setLinuxDistros] = useState([{"name": "", "discription": "", "features": []}])
+    
+    useEffect(
+        () => {
+            getDocs(collection(db, "linuxDistros")).then(
+                (snapShot) => {
+                    setLinuxDistros(
+                        snapShot.forEach(
+                            (doc) => (
+                                {
+                                    "id": doc.id,
+                                    "name": doc.data().name,
+                                    "discription": doc.data().discription,
+                                    "features": doc.data().features
+                                }
+                            )
+                        )
+                    )
+                }
+            );
+        }, []
+    )
     
     try {
         (async function() {
