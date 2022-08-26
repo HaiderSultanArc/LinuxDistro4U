@@ -5,24 +5,27 @@
 
 ![Screenshot from 2021-04-21 20-10-30](https://user-images.githubusercontent.com/59045242/115577220-aaaf0100-a2dd-11eb-9309-52b81c40b266.png)
 
-<br />
+# <br />
 
-### Desciption:
+## Desciption:
 Choosing a Linux Distro can be difficult as there is a ton of options to go with. So, I made this little website. It's a Questionnaire based website that uses Machine Learning to predict the Linux Distro that will best suit you, based on your response. It makes the choice for you and gives a single best name of the distro for your priorities.
 
 Visit Website here: [LinuxDistro4U](https://linux-distro-4u.web.app/)
 
 
 
-### Techologies used:
+## Techologies used:
 The project was divided into 2 parts:
-1. Machine Learning Model
-  * For Machine Learning, I worked in Python Tensorflow <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" />
+### 1. Machine Learning Model
+  * For Machine Learning, I worked in Python Tensorflow <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" />. For my model to work on Browser, I used TensoflowJS that imported TensorflowLite Model from Google Storage.
 
-2. Web Development
-  * For Web Development, I worked in ReactJS <img alt="React" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> and Firebase <img alt="Firebase" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" /> for hosting. I also used TensoflowJS <img alt="TensorFlow" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" /> to import my Tensorflow.Keras Model.
+### 2. Frontend Development
+  * For Frontend Development, I worked in ReactJS <img alt="React" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
 
-### Things I learned:
+### 3. Hosting and Data Storage
+  * I used Firebase <img alt="Firebase" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" /> for hosting and firebase realtime datbase for data storage
+
+## Things I learned:
 * Collecting Data for Machine Learning
 * Data analysis and Processing for Machine Learning
 * Developing Machine Learning Models
@@ -62,7 +65,7 @@ The project was divided into 2 parts:
 - [ ] Re-Train the Model
 - [ ] Host version 3.0 on Firebase
 
-<br />
+# <br />
 
 <h3 align="left">Connect with me:</h3>
 <p align="center">
