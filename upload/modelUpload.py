@@ -8,10 +8,10 @@ app = firebase_admin.initialize_app(
     }
 )
 
-model = tf.keras.models.load_model("model/LinuxDistro4UPredictor.h5")
+model = tf.keras.models.load_model("../training/model/LinuxDistro4UPredictor.h5")
 
 try:
-    source = ml.TFLiteGCSModelSource.from_keras_model(model, "model/LinuxDistro4UPredictor.tflite")
+    source = ml.TFLiteGCSModelSource.from_keras_model(model, "../training/model/LinuxDistro4UPredictor.tflite")
     print(source.gcs_tflite_uri)
 except Exception as error:
     print(error)

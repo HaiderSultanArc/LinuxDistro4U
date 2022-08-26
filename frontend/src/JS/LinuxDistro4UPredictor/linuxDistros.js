@@ -1,3 +1,4 @@
+
 const linuxDistros = [
     {
         "name": "Arch Linux",
@@ -665,5 +666,6 @@ const linuxDistros = [
         "name": "Please Wait..."
     }
 ]
+
 
 export default linuxDistros;
