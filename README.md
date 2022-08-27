@@ -50,20 +50,22 @@ The project was divided into 2 parts:
 - [x] Upgrade to React 18
 - [x] Updrade to mui
 - [x] Move Linux Distro Library and Questions to Firebase
-- [ ] Setup CI/CD using Github Actions
 - [x] Move TensorFlow Model to firebase using firebase-admin
-- [ ] Dockerize the solution
-- [ ] Host version 1.5 on Firebase
 ### Version 2.0:
+- [ ] Setup CI/CD using Github Actions
+- [ ] Develop a Python Backend for the Application
+- [ ] Dockerize the solution
+- [ ] Host version 2.0 on Vercel
+### Version 3.0:
 - [ ] Include Linux Distros that are Active for 5 or more years and can be used as Desktop
 - [ ] Re-Collect the Training Data
 - [ ] Re-Train the Model and Deploy it
-- [ ] Host version 2.0 on Firebase
-### Version 3.0
+- [ ] Host version 3.0 on Vercel
+### Version 4.0
 - [ ] Include Linux Distros that are Active for 5 or more years and are special purpose
 - [ ] Re-Collect the Training Data
 - [ ] Re-Train the Model
-- [ ] Host version 3.0 on Firebase
+- [ ] Host version 4.0 on Vercel
 
 # <br />
 
