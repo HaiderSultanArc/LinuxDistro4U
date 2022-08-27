@@ -54,6 +54,7 @@ The project was divided into 2 parts:
 ### Version 2.0:
 - [ ] Setup CI/CD using Github Actions
 - [ ] Develop a Python Backend for the Application
+- [ ] Use TensorFlow Model with Python Backend
 - [ ] Dockerize the solution
 - [ ] Host version 2.0 on Vercel
 ### Version 3.0:
